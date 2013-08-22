@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <META charset="utf-8" />
+  <META name="format-detection" content="telephone=no" />
+  <META name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+  />
+  <TITLE>Protégete</TITLE>
+  <LINK rel="stylesheet" type="text/css" href="css/simplestyle.css" />
+  <script>
+	
+	function showPopup()
+	{
+		alert("Denuncia enviada\nMuchas gracias\npor su colaboración");
+	}
+	
+	function showFront()
+	{
+		var clsElements = document.querySelectorAll("div");
+		for (var i=0, max=clsElements.length; i < max; i++) {
+			clsElements[i].style.display='none';
+		}
+		clsElements = document.querySelectorAll("nav");
+		for (var i=0, max=clsElements.length; i < max; i++) {
+			clsElements[i].style.display='none';
+		}
+		document.getElementById('portada').style.display='block';
+		
+		window.setTimeout("showAll();", 5000);
+	}
+	
+	function showAll()
+	{
+		var clsElements = document.querySelectorAll("nav");
+		for (var i=0, max=clsElements.length; i < max; i++) {
+			clsElements[i].style.display='block';
+		}
+		showMenu('inicio');
+	}
+	
+	function showMenu(divId)
+	{
+		var clsElements = document.querySelectorAll("div");
+		for (var i=0, max=clsElements.length; i < max; i++) {
+			clsElements[i].style.display='none';
+		}
+		document.getElementById(divId).style.display='block';
+	}
+	
+  </script>
+</HEAD>
+<BODY onload="showFront()" bgcolor="#FFFFFF">
+
+		<!-- Portada -->
+		
+		<div id="portada">
+		
+			<center>
+			<img src="img/protegete.jpeg" height="200" width="200">
+			</center>
+			<h1>Protégete</h1>
+			<p>
+			Si has encontrado en internet algo que te hace sentir mal, o que pueda ser ilegal, aquí puedes denunciarlo de forma  ANÓNIMA.
+			</p>
+			<p>
+			Si alguien te acosa en internet, si te envían amenazas, si están difundiendo tu imagen o datos personales tuyos, o si han usurpado tu identidad, podemos ayudarte.
+			</p>
+			<center>
+			<img src="img/protegeles.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/comision.png">
+			</center>
+			
+		</div>
+		
+		<!-- Nav -->
+
+		<nav id="nav">
+			<ul>
+				<li><a onclick ="javascript:showMenu('inicio')" href="javascript:;"><b>Inicio</b></a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a onclick ="javascript:showMenu('somos')" href="javascript:;"><b>Somos</b></a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a onclick ="javascript:showMenu('denuncia')" href="javascript:;"><b>Denuncia</b></a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+				<li><a onclick ="javascript:showMenu('ayuda')" href="javascript:;"><b>Ayuda</b></a></li>
+			</ul>
+		</nav>
+		
+		<!-- Inicio -->
+		
+		<div id="inicio">
+		
+			<p><br><br></p>
+				
+			<h2>Inicio</h2>
+			
+			<h3>Informar de forma anónima sobre un contenido ilegal o dañino</h3>
+			<p align="left">¿Qué es una denuncia anónima?</p>
+			<p align="left">¿Qué contenidos son ilegales o dañinos?</p>
+			
+			<h3 align="left">Solicitar ayuda ante una situación que estoy sufriendo en internet</h3>
+			<p align="left">¿Quién me va a ayudar?</p>
+			<p align="left">¿Ante qué situaciones puedo pedir ayuda?</p>
+			
+			<h3 align="left">Cuestionario de evaluación</h3>
+			<p align="left">¿Quieres probar tus conocimientos sobre seguridad en internet?</p>
+				
+		</div>
+		
+		<!-- Somos -->
+	
+		<div id="somos">
+	
+			<p><br><br></p>
+
+			<H2>Somos</H2>
+			<P>
+			PROTEGETE es la Línea de Ayuda y Denuncia para menores de edad, desarrollada por el Centro de Seguridad en Internet para España coordinado en por la organización PROTEGELES, y dependiente del Safer In-ternet Programme de la Comisión Europea.
+			</P>
+			<P>
+			PROTEGETE ha sido desarrollada en colaboración con TELEFÓNICA, VODAFONE, ORANGE y YOIGO.
+			</p>
+			<center>
+			<img src="img/protegeles.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/comision.png"><br>
+			<img src="img/telefonica.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/vodafone.png"><br>
+			<img src="img/orange.jpg" height="50" width="50">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/yoigo.jpg" height="50" width="150">
+			</center>
+
+			
+		</div>
+		
+		<!-- Denuncia -->
+		
+		<div id="denuncia">
+
+			<p><br><br></p>
+
+			<H2>Denuncia</H2>
+			<P align="center">
+			Informa de forma anónima sobre un contenido ilegal o dañino.
+			</P>
+			 <FORM>
+				<P ALIGN=Center>
+				<B>URL:</B> http:// -------------------- <br> <INPUT type="text" name="URL"><BR>
+				</P>
+				<P ALIGN=Center>
+				<input type="button" onclick="showPopup()" value="Enviar">
+				</P>
+			 </FORM>
+			 
+			<P align="center">
+			Si quieres informar sobre un contenido p2p u otro contenido que no tenga una URL, puedes  describirlo aquí:	
+			</P>
+
+			 <FORM>
+				<P ALIGN=Center>
+				<INPUT type="textarea" name="othercontent"><BR>
+				</P>
+				<P ALIGN=Center>
+				<input type="button" onclick="showPopup()" value="Enviar">
+				</P>
+			 </FORM>
+
+		</div>
+		
+ 		<!-- Ayuda -->
+		
+		<div id="ayuda">
+
+			<p><br><br></p>
+
+			<H2>Ayuda</H2>
+			<P>
+			Para copiar una URL, pulsa sobre la barra de direcciones del navegador dos veces, y sobre el men&uacute; emergente, pulsa "Seleccionar todo" y despu&eacute;s "Copiar".
+			</P>
+			<P>
+			Para pegar una URL, pulsa sobre el campo de texto URL de nuestra aplicaci&oacute;n dos veces y selecciona "Pegar" en el men&uacute; emergente.
+			</p>
+		
+		</div>
+		
+	</BODY>
+</HTML>
