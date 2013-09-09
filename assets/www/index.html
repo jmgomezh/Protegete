@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <HTML>
 <HEAD>
-  <META charset="utf-8" />
-  <META name="format-detection" content="telephone=no" />
-  <META name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
-  />
   <TITLE>Protégete</TITLE>
-  <LINK rel="stylesheet" type="text/css" href="css/simplestyle.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+  <meta name=viewport content="user-scalable=no,width=device-width" />
+  <link rel=stylesheet href=css/test-protegete.min.css />
+  <link rel=stylesheet href=css/jquery.mobile.structure-1.3.2.min.css />
+  <script src=js/jquery-1.10.2.min.js></script>
+  <script src=js/jquery.mobile-1.3.2.min.js></script>
   <script>
 	
 	function showPopup()
@@ -14,100 +15,57 @@
 		alert("Denuncia enviada\nMuchas gracias\npor su colaboración");
 	}
 	
-	function showFront()
-	{
-		var clsElements = document.querySelectorAll("div");
-		for (var i=0, max=clsElements.length; i < max; i++) {
-			clsElements[i].style.display='none';
-		}
-		clsElements = document.querySelectorAll("nav");
-		for (var i=0, max=clsElements.length; i < max; i++) {
-			clsElements[i].style.display='none';
-		}
-		document.getElementById('portada').style.display='block';
-		
-		window.setTimeout("showAll();", 5000);
-	}
-	
-	function showAll()
-	{
-		var clsElements = document.querySelectorAll("nav");
-		for (var i=0, max=clsElements.length; i < max; i++) {
-			clsElements[i].style.display='block';
-		}
-		showMenu('inicio');
-	}
-	
-	function showMenu(divId)
-	{
-		var clsElements = document.querySelectorAll("div");
-		for (var i=0, max=clsElements.length; i < max; i++) {
-			clsElements[i].style.display='none';
-		}
-		document.getElementById(divId).style.display='block';
-	}
-	
-  </script>
+	</script>
 </HEAD>
-<BODY onload="showFront()" bgcolor="#FFFFFF">
-
-		<!-- Portada -->
-		
-		<div id="portada">
-		
-			<center>
-			<img src="img/protegete.jpeg" height="200" width="200">
-			</center>
-			<h1>Protégete</h1>
-			<p>
-			Si has encontrado en internet algo que te hace sentir mal, o que pueda ser ilegal, aquí puedes denunciarlo de forma  ANÓNIMA.
-			</p>
-			<p>
-			Si alguien te acosa en internet, si te envían amenazas, si están difundiendo tu imagen o datos personales tuyos, o si han usurpado tu identidad, podemos ayudarte.
-			</p>
-			<center>
-			<img src="img/protegeles.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/comision.png">
-			</center>
-			
+<BODY>
+	
+	<div data-role=page id="inicio" data-theme="a">
+	
+		<!-- Navegacion -->
+		<div data-role=header data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio class="ui-btn-active ui-state-persist">Inicio</a></li>
+				<li><a href=#somos>Somos</a></li>
+				<li><a href=#denuncia>Denuncia</a></li>
+				<li><a href=#ayuda>Ayuda</a></li>
+			  </ul>
+			</div>
 		</div>
-		
-		<!-- Nav -->
 
-		<nav id="nav">
-			<ul>
-				<li><a onclick ="javascript:showMenu('inicio')" href="javascript:;"><b>Inicio</b></a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li><a onclick ="javascript:showMenu('somos')" href="javascript:;"><b>Somos</b></a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li><a onclick ="javascript:showMenu('denuncia')" href="javascript:;"><b>Denuncia</b></a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-				<li><a onclick ="javascript:showMenu('ayuda')" href="javascript:;"><b>Ayuda</b></a></li>
-			</ul>
-		</nav>
-		
-		<!-- Inicio -->
-		
-		<div id="inicio">
-		
-			<p><br><br></p>
-				
+		<div data-role="content">	
 			<h2>Inicio</h2>
 			
 			<h3>Informar de forma anónima sobre un contenido ilegal o dañino</h3>
-			<p align="left">¿Qué es una denuncia anónima?</p>
-			<p align="left">¿Qué contenidos son ilegales o dañinos?</p>
+			<p>¿Qué es una denuncia anónima?</p>
+			<p>¿Qué contenidos son ilegales o dañinos?</p>
 			
-			<h3 align="left">Solicitar ayuda ante una situación que estoy sufriendo en internet</h3>
-			<p align="left">¿Quién me va a ayudar?</p>
-			<p align="left">¿Ante qué situaciones puedo pedir ayuda?</p>
+			<h3>Solicitar ayuda ante una situación que estoy sufriendo en internet</h3>
+			<p>¿Quién me va a ayudar?</p>
+			<p>¿Ante qué situaciones puedo pedir ayuda?</p>
 			
-			<h3 align="left">Cuestionario de evaluación</h3>
-			<p align="left">¿Quieres probar tus conocimientos sobre seguridad en internet?</p>
-				
+			<h3>Cuestionario de evaluación</h3>
+			<p>¿Quieres probar tus conocimientos sobre seguridad en internet?</p>
+		</div>
+			
+	</div>
+	
+	<!-- Somos -->
+	<div data-role=page id="somos" data-theme="a">
+
+			<!-- Navegacion -->
+		<div data-role=header data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio>Inicio</a></li>
+				<li><a href=#somos class="ui-btn-active ui-state-persist">Somos</a></li>
+				<li><a href=#denuncia>Denuncia</a></li>
+				<li><a href=#ayuda>Ayuda</a></li>
+			  </ul>
+			</div>
 		</div>
 		
-		<!-- Somos -->
-	
-		<div id="somos">
-	
-			<p><br><br></p>
+		<div data-role="content">	
 
 			<H2>Somos</H2>
 			<P>
@@ -116,20 +74,31 @@
 			<P>
 			PROTEGETE ha sido desarrollada en colaboración con TELEFÓNICA, VODAFONE, ORANGE y YOIGO.
 			</p>
-			<center>
+			<p align=center>
 			<img src="img/protegeles.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/comision.png"><br>
 			<img src="img/telefonica.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/vodafone.png"><br>
 			<img src="img/orange.jpg" height="50" width="50">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/yoigo.jpg" height="50" width="150">
-			</center>
-
-			
+			</p>
+		</div>
+	</div>
+	
+	<!-- Denuncia -->
+		
+	<div data-role=page id="denuncia" data-theme="a">
+	
+		<!-- Navegacion -->
+		<div data-role=header data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio>Inicio</a></li>
+				<li><a href=#somos>Somos</a></li>
+				<li><a href=#denuncia class="ui-btn-active ui-state-persist">Denuncia</a></li>
+				<li><a href=#ayuda>Ayuda</a></li>
+			  </ul>
+			</div>
 		</div>
 		
-		<!-- Denuncia -->
-		
-		<div id="denuncia">
-
-			<p><br><br></p>
+		<div data-role="content" data-theme="a">	
 
 			<H2>Denuncia</H2>
 			<P align="center">
@@ -156,24 +125,39 @@
 				<input type="button" onclick="showPopup()" value="Enviar">
 				</P>
 			 </FORM>
-
 		</div>
-		
- 		<!-- Ayuda -->
-		
-		<div id="ayuda">
 
-			<p><br><br></p>
+	</div>
+	
+	<!-- Ayuda -->
+	
+	<div data-role=page id="ayuda" data-theme="a">
+	
+		<!-- Navegacion -->
+		<div data-role=header data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio>Inicio</a></li>
+				<li><a href=#somos>Somos</a></li>
+				<li><a href=#denuncia>Denuncia</a></li>
+				<li><a href=#ayuda class="ui-btn-active ui-state-persist">Ayuda</a></li>
+			  </ul>
+			</div>
+		</div>
 
-			<H2>Ayuda</H2>
+		<div data-role="content">
+		
+			<H1>Ayuda</H1>
+
 			<P>
 			Para copiar una URL, pulsa sobre la barra de direcciones del navegador dos veces, y sobre el men&uacute; emergente, pulsa "Seleccionar todo" y despu&eacute;s "Copiar".
 			</P>
 			<P>
 			Para pegar una URL, pulsa sobre el campo de texto URL de nuestra aplicaci&oacute;n dos veces y selecciona "Pegar" en el men&uacute; emergente.
 			</p>
-		
+			
 		</div>
-		
-	</BODY>
+	</div>
+				
+</BODY>
 </HTML>
