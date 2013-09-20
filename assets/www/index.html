@@ -18,145 +18,270 @@
 	</script>
 </HEAD>
 <BODY>
+
+	<!-- Portada -->
+		
+	<div data-role=page id="somos" data-theme="a">
+	
+		<div data-role="content">
+		
+			<p align=center>
+			<img src="img/protegete2.jpg" height="80">
+			</p>
+			
+			<font size="2">
+			<P align="justify">
+			<strong>PROTÉGETE</strong> es la <strong>Línea de Ayuda y Denuncia</strong> para menores de edad, desarrollada por <strong>PROTEGELES</strong> con el apoyo de la <strong>Comisión Europea</strong>, yen colaboración con <strong>TELEFÓNICA</strong>, <strong>VODAFONE</strong>, <strong>ORANGE</strong> y <strong>YOIGO</strong>.
+			</p>
+			</font>
+			
+			<p align=center >
+			<img src="img/logos.jpg" height="80">
+			</p>
+			<!--
+			<div class="ui-grid-b">
+				<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/protegeles.jpg" height="50" width="100"></p></div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/comision.png"></p></div></div>
+				<div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/telefonica.jpg" height="50" width="100"></p></div></div>
+				<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/vodafone.png"></p></div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/orange.jpg" height="50" width="50"></p></div></div>
+				<div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/yoigo.jpg" height="37" width="112"></p></div></div>
+			</div>
+			-->	
+			<p align="center"><a href="#inicio" data-role="button" data-inline="true" data-transition="none">Acceder</a></p>
+			
+		</div><!-- /content -->
+
+	</div>
 	
 	<div data-role=page id="inicio" data-theme="a">
 	
-		<!-- Navegacion -->
-		<div data-role=header data-position=fixed id="nav">
-			<div data-role=navbar>
-			  <ul>
-				<li><a href=#inicio class="ui-btn-active ui-state-persist">Inicio</a></li>
-				<li><a href=#somos>Somos</a></li>
-				<li><a href=#denuncia>Denuncia</a></li>
-				<li><a href=#ayuda>Ayuda</a></li>
-			  </ul>
-			</div>
-		</div>
-
-		<div data-role="content">	
-			<h2>Inicio</h2>
-			
-			<h3>Informar de forma anónima sobre un contenido ilegal o dañino</h3>
-			<p>¿Qué es una denuncia anónima?</p>
-			<p>¿Qué contenidos son ilegales o dañinos?</p>
-			
-			<h3>Solicitar ayuda ante una situación que estoy sufriendo en internet</h3>
-			<p>¿Quién me va a ayudar?</p>
-			<p>¿Ante qué situaciones puedo pedir ayuda?</p>
-			
-			<h3>Cuestionario de evaluación</h3>
-			<p>¿Quieres probar tus conocimientos sobre seguridad en internet?</p>
-		</div>
-			
-	</div>
+		<div data-role="header" style="overflow:hidden;">
+			<h1>PROTÉGETE</h1>
+			<a href="#acercade" data-icon="info" class="ui-btn-right" data-transition="none">Info</a>
+			<img src="img/protegete.jpg" height="36" width="36" class="ui-btn-left">
+		</div><!-- /header -->
 	
-	<!-- Somos -->
-	<div data-role=page id="somos" data-theme="a">
-
-			<!-- Navegacion -->
-		<div data-role=header data-position=fixed id="nav">
+		<div data-role="content" id="paginainicio">
+			
+			<p align="center">
+				<a href="#denuncia" data-transition="none"><img src="img/rojo.jpg"></a><br>
+				<a href="#lineaayuda" data-transition="none"><img src="img/verde.jpg"></a><br>
+			</p>
+			<p align="center">¿Sábes qué es el cyberbullying?</p>
+			<p align="center"><a href="#test" data-role="button" data-inline="true" data-transition="none">Haz el test</a></p>
+						
+		</div><!-- /content -->
+		
+		<!-- Navegacion -->
+		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			  <ul>
-				<li><a href=#inicio>Inicio</a></li>
-				<li><a href=#somos class="ui-btn-active ui-state-persist">Somos</a></li>
-				<li><a href=#denuncia>Denuncia</a></li>
-				<li><a href=#ayuda>Ayuda</a></li>
+				<li><a href=#inicio class="ui-btn-active ui-state-persist" data-transition="none">Inicio</a></li>
+				<li><a href=#denuncia data-transition="none">Denuncia</a></li>
+				<li><a href=#lineaayuda data-transition="none">Linea Ayuda</a></li>
+				<li><a href=#test data-transition="none">Test</a></li>
 			  </ul>
 			</div>
-		</div>
-		
-		<div data-role="content">	
+		</div><!-- /footer -->
 
-			<H2>Somos</H2>
-			<P>
-			PROTEGETE es la Línea de Ayuda y Denuncia para menores de edad, desarrollada por el Centro de Seguridad en Internet para España coordinado en por la organización PROTEGELES, y dependiente del Safer In-ternet Programme de la Comisión Europea.
-			</P>
-			<P>
-			PROTEGETE ha sido desarrollada en colaboración con TELEFÓNICA, VODAFONE, ORANGE y YOIGO.
-			</p>
-			<p align=center>
-			<img src="img/protegeles.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/comision.png"><br>
-			<img src="img/telefonica.jpg" height="50" width="100">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/vodafone.png"><br>
-			<img src="img/orange.jpg" height="50" width="50">&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/yoigo.jpg" height="50" width="150">
-			</p>
-		</div>
+			
 	</div>
 	
 	<!-- Denuncia -->
 		
 	<div data-role=page id="denuncia" data-theme="a">
 	
+		<div data-role="header" style="overflow:hidden;">
+			<h1>PROTÉGETE</h1>
+			<a href="#acercade" data-icon="info" class="ui-btn-right" data-transition="none">Info</a>
+			<img src="img/protegete.jpg" height="36" width="36" class="ui-btn-left">
+		</div><!-- /header -->
+		
+		<div data-role="content" data-theme="a" id="paginadenuncia">
+		
+			<p>En esta sección puedes efectuar denuncias anónimas de contenidos ilegales o dañinos.</p>
+			
+			<p><a href="#denunciaanonima" data-rel="popup" data-inline="true" data-position-to="window">¿Qué es una denuncia anónima?</a></p>
+			<div data-role="popup" id="denunciaanonima" class="ui-content" style="max-width:400px" data-dismissible="false">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<p align="justify">Cuando hablamos de <strong>denuncia anónima</strong>, queremos decir que toda la información que facilites sobre un contenido será recogida sin guardar <strong>ningún dato personal tuyo</strong>.</p>
+				<p align="justify">Es decir, en esta Línea se recoge la información que los usuarios envían, pero no quién la envía, ni desde dónde.</p>
+				<p align="justify">En PROTEGELES se comprueba si el contenido es ilegal o amenazante, y después se traslada a la unidad de Policía del país en el que se encuentre alojado el contenido, así como a la organización Internacional de Líneas de Denuncia (INHOPE).</p>
+			</div>
+			<p><a href="#contenidosilegales" data-rel="popup" data-inline="true" data-position-to="window">¿Qué contenidos son ilegales o dañinos?</a></p>
+			<div data-role="popup" id="contenidosilegales" class="ui-content" style="max-width:400px" data-dismissible="false">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<p align="justify">En esta Línea puedes informar sobre cualquier contenido ilegal, pero de forma prioritaria sobre <strong>imágenes de abusos sexuales contra menores de edad</strong> (pornografía infantil).</p>
+				<p align="justify">También puedes informar sobre contenidos dañinos, tanto si son ilegales en el país de origen como si no lo son. Así, puedes comunicar la presencia de:</p>
+				<ul>
+					<li>Páginas o perfiles que promueven <strong>la Anorexia y la Bulimia</strong>.</li>
+					<li>Páginas o perfiles con imágenes de <strong>acoso escolar</strong>, o donde un menor de edad sea maltratado.</li>
+					<li><strong>Sexting</strong> entre menores.</li>
+				</ul>
+				<p align="justify">Y cualquier otro contenido que te haga sentir mal.</p>
+			</div>
+			
+			<form>
+				<p align="center"><strong>Denuncia una URL:</strong>
+					<label for="url" class="ui-hidden-accessible">URL:</label>
+					<input type="text" name="url" id="url" value="" placeholder="http://" data-theme="a">
+					<button type="submit" data-theme="a" data-icon="check" onclick="showPopup()" data-inline="true">Enviar</button>
+				</p>
+			</form>
+
+			<form>
+				<p align="center"><strong>Denuncia un contenido sin URL:</strong>
+					<label for="url" class="ui-hidden-accessible">Contenido:</label>
+					<textarea cols="40" rows="8" name="contenidoilegal" id="contenidoilegal" value="" placeholder="Describe el contenido" data-theme="a"></textarea>
+					<button type="submit" data-theme="a" data-icon="check" onclick="showPopup()" data-inline="true">Enviar</button>
+				</p>
+			</form>
+			</p>
+
+		</div><!-- /content -->
+		
 		<!-- Navegacion -->
-		<div data-role=header data-position=fixed id="nav">
+		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			  <ul>
-				<li><a href=#inicio>Inicio</a></li>
-				<li><a href=#somos>Somos</a></li>
-				<li><a href=#denuncia class="ui-btn-active ui-state-persist">Denuncia</a></li>
-				<li><a href=#ayuda>Ayuda</a></li>
+				<li><a href=#inicio data-transition="none">Inicio</a></li>
+				<li><a href=#denuncia class="ui-btn-active ui-state-persist" data-transition="none">Denuncia</a></li>
+				<li><a href=#lineaayuda data-transition="none">Linea Ayuda</a></li>
+				<li><a href=#test data-transition="none">Test</a></li>
 			  </ul>
 			</div>
-		</div>
-		
-		<div data-role="content" data-theme="a">	
-
-			<H2>Denuncia</H2>
-			<P align="center">
-			Informa de forma anónima sobre un contenido ilegal o dañino.
-			</P>
-			 <FORM>
-				<P ALIGN=Center>
-				<B>URL:</B> http:// -------------------- <br> <INPUT type="text" name="URL"><BR>
-				</P>
-				<P ALIGN=Center>
-				<input type="button" onclick="showPopup()" value="Enviar">
-				</P>
-			 </FORM>
-			 
-			<P align="center">
-			Si quieres informar sobre un contenido p2p u otro contenido que no tenga una URL, puedes  describirlo aquí:	
-			</P>
-
-			 <FORM>
-				<P ALIGN=Center>
-				<INPUT type="textarea" name="othercontent"><BR>
-				</P>
-				<P ALIGN=Center>
-				<input type="button" onclick="showPopup()" value="Enviar">
-				</P>
-			 </FORM>
-		</div>
+		</div><!-- /footer -->
 
 	</div>
 	
-	<!-- Ayuda -->
+	<!-- LineaAyuda -->
 	
-	<div data-role=page id="ayuda" data-theme="a">
-	
+	<div data-role=page id="lineaayuda" data-theme="a">
+
+		<div data-role="header" style="overflow:hidden;">
+			<h1>PROTÉGETE</h1>
+			<a href="#acercade" data-icon="info" class="ui-btn-right" data-transition="none">Info</a>
+			<img src="img/protegete.jpg" height="36" width="36" class="ui-btn-left">
+		</div><!-- /header -->	
+
+		<div data-role="content" data-theme="a" id="paginaayuda">
+		
+			<p>En esta sección puedes describir una situación que te resulte incómoda o perjudicial.</p>
+			
+			<p><a href="#quienayuda" data-rel="popup" data-inline="true" data-position-to="window">¿Quién me va a ayudar?</a></p>
+			<div data-role="popup" id="quienayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<p align="justify">Contenido por determinar.</p>
+			</div>
+
+			<p><a href="#situacionesayuda" data-rel="popup" data-inline="true" data-position-to="window">¿Ante qué situaciones puedo pedir ayuda?</a></p>
+			<div data-role="popup" id="situacionesayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<p align="justify">Contenido por determinar.</p>
+			</div>
+
+			<form>
+					<p align="center"><strong>Describe la situación o el problema:</strong>
+					<label for="url" class="ui-hidden-accessible">Contenido:</label>
+					<textarea cols="40" rows="8" name="contenidoayuda" id="contenidoayuda" value="" placeholder="Esta es la situación" data-theme="a"></textarea>
+					<button type="submit" data-theme="a" data-icon="check" onclick="showPopup()" data-inline="true">Enviar</button>
+					</p>
+			</form>
+				
+		</div><!-- /content -->
+		
 		<!-- Navegacion -->
-		<div data-role=header data-position=fixed id="nav">
+		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			  <ul>
-				<li><a href=#inicio>Inicio</a></li>
-				<li><a href=#somos>Somos</a></li>
-				<li><a href=#denuncia>Denuncia</a></li>
-				<li><a href=#ayuda class="ui-btn-active ui-state-persist">Ayuda</a></li>
+				<li><a href=#inicio data-transition="none">Inicio</a></li>
+				<li><a href=#denuncia data-transition="none">Denuncia</a></li>
+				<li><a href=#lineaayuda class="ui-btn-active ui-state-persist" data-transition="none">Linea Ayuda</a></li>
+				<li><a href=#test data-transition="none">Test</a></li>
 			  </ul>
 			</div>
-		</div>
+		</div><!-- /footer -->
+
+	</div>
+	
+	<!-- Test -->
+	
+	<div data-role=page id="test" data-theme="a">
+	
+		<div data-role="header" style="overflow:hidden;">
+			<h1>PROTÉGETE</h1>
+			<a href="#acercade" data-icon="info" class="ui-btn-right" data-transition="none">Info</a>
+			<img src="img/protegete.jpg" height="36" width="36" class="ui-btn-left">
+		</div><!-- /header -->
 
 		<div data-role="content">
 		
-			<H1>Ayuda</H1>
+			<H1>Test de autoevaluación</H1>
 
 			<P>
-			Para copiar una URL, pulsa sobre la barra de direcciones del navegador dos veces, y sobre el men&uacute; emergente, pulsa "Seleccionar todo" y despu&eacute;s "Copiar".
+			Utiliza este test para averiguar tus conocimientos sobre seguridad en Internet.
 			</P>
 			<P>
-			Para pegar una URL, pulsa sobre el campo de texto URL de nuestra aplicaci&oacute;n dos veces y selecciona "Pegar" en el men&uacute; emergente.
+			Pulsa *aquí* para comenzar el test.
 			</p>
 			
-		</div>
+		</div><!-- /content -->
+		
+		<!-- Navegacion -->
+		<div data-role=footer data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio data-transition="none">Inicio</a></li>
+				<li><a href=#denuncia data-transition="none">Denuncia</a></li>
+				<li><a href=#lineaayuda data-transition="none">Linea Ayuda</a></li>
+				<li><a href=#test class="ui-btn-active ui-state-persist" data-transition="none">Test</a></li>
+			  </ul>
+			</div>
+		</div><!-- /footer -->
+
+	</div>
+
+	<!-- AcercaDe -->
+		
+	<div data-role=page id="acercade" data-theme="a">
+	
+		<div data-role="header" style="overflow:hidden;">
+			<h1>PROTÉGETE</h1>
+			<a href="#somos" data-icon="info" class="ui-btn-right" data-transition="none">Info</a>
+			<img src="img/protegete.jpg" height="36" width="36" class="ui-btn-left">
+		</div><!-- /header -->
+
+		<div data-role="content">
+			
+			<p align=center>
+			<img src="img/protegete2.jpg" height="80">
+			</p>
+			
+			<font size="2">
+			<P align="justify">
+			<strong>PROTÉGETE</strong> es la <strong>Línea de Ayuda y Denuncia</strong> para menores de edad, desarrollada por <strong>PROTEGELES</strong> con el apoyo de la <strong>Comisión Europea</strong>, yen colaboración con <strong>TELEFÓNICA</strong>, <strong>VODAFONE</strong>, <strong>ORANGE</strong> y <strong>YOIGO</strong>.
+			</p>
+			</font>
+			
+			<p align=center >
+			<img src="img/logos.jpg" height="80">
+			</p>
+			
+		</div><!-- /content -->
+		
+		<!-- Navegacion -->
+		<div data-role=footer data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio data-transition="none">Inicio</a></li>
+				<li><a href=#denuncia data-transition="none">Denuncia</a></li>
+				<li><a href=#lineaayuda data-transition="none">Linea Ayuda</a></li>
+				<li><a href=#test data-transition="none">Test</a></li>
+			  </ul>
+			</div>
+		</div><!-- /footer -->
+
 	</div>
 				
 </BODY>
