@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <HTML>
 <HEAD>
-  <TITLE>Protégete</TITLE>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf8">
-  <meta name=viewport content="user-scalable=no,width=device-width" />
-  <link rel=stylesheet href=css/test-protegete.min.css />
-  <link rel=stylesheet href=css/jquery.mobile.structure-1.3.2.min.css />
-  <script src=js/jquery-1.10.2.min.js></script>
-  <script src=js/jquery.mobile-1.3.2.min.js></script>
-  <script>
-	
-	function showPopup()
-	{
-		alert("Denuncia enviada\nMuchas gracias\npor su colaboración");
-	}
-	
+	<TITLE>Protégete</TITLE>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<meta name=viewport content="user-scalable=no,width=device-width" />
+	<link rel=stylesheet href=css/jquery.mobile.structure-1.3.2.min.css />
+	<link rel=stylesheet href=css/protegete-v1.min.css />
+	<script src=js/jquery-1.10.2.min.js></script>
+	<script src=js/jquery.mobile-1.3.2.min.js></script>
+	<script>
+		
+		function showPopup()
+		{
+			alert("Denuncia enviada\nMuchas gracias\npor su colaboración");
+		}
+		
+		function newPage(url){
+			window.open(url,"_self","");
+		}
+		
 	</script>
+	<style>
+		.ui-header .ui-btn-inner, .ui-footer .ui-btn-inner, .ui-mini .ui-btn-inner { font-size: 10px }
+	</style>
 </HEAD>
 <BODY>
 
 	<!-- Portada -->
 		
-	<div data-role=page id="somos" data-theme="a">
+	<div data-role=page id="somos" data-theme="b">
 	
 		<div data-role="content">
 		
+			<p align=center>
+			<img src="img/protegete2.jpg" width="100%">
+			</p>
+
+			<P align="justify">
+			<strong>PROTÉGETE</strong> es la <strong>Línea de Ayuda y Denuncia</strong> para menores de edad, desarrollada por <strong>PROTEGELES</strong> con el apoyo de la <strong>Comisión Europea</strong>, yen colaboración con <strong>TELEFÓNICA</strong>, <strong>VODAFONE</strong>, <strong>ORANGE</strong> y <strong>YOIGO</strong>.
+			</p>
+			
+			<p align=center >
+			<img src="img/logos.jpg" width="100%">
+			</p>
+			<p align="center"><a href="#inicio" data-role="button" data-inline="true" data-transition="none">Acceder</a></p>
+			
+		</div><!-- /content -->
+
+	</div>
+	
+	<!-- AcercaDe -->
+		
+	<div data-role=page id="acercade" data-theme="b">
+	
+		<div data-role="header" style="overflow:hidden;">
+			<h1>PROTÉGETE</h1>
+			<a href="#somos" data-icon="info" class="ui-btn-right" data-transition="none">Info</a>
+			<img src="img/protegete.jpg" height="36" width="36" class="ui-btn-left">
+		</div><!-- /header -->
+
+		<div data-role="content">
+			
 			<p align=center>
 			<img src="img/protegete2.jpg" height="80">
 			</p>
@@ -38,23 +74,26 @@
 			<p align=center >
 			<img src="img/logos.jpg" height="80">
 			</p>
-			<!--
-			<div class="ui-grid-b">
-				<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/protegeles.jpg" height="50" width="100"></p></div></div>
-				<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/comision.png"></p></div></div>
-				<div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/telefonica.jpg" height="50" width="100"></p></div></div>
-				<div class="ui-block-a"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/vodafone.png"></p></div></div>
-				<div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/orange.jpg" height="50" width="50"></p></div></div>
-				<div class="ui-block-c"><div class="ui-bar ui-bar-e" style="height:60px"><p align="center"><img src="img/yoigo.jpg" height="37" width="112"></p></div></div>
-			</div>
-			-->	
-			<p align="center"><a href="#inicio" data-role="button" data-inline="true" data-transition="none">Acceder</a></p>
 			
 		</div><!-- /content -->
+		
+		<!-- Navegacion -->
+		<div data-role=footer data-position=fixed id="nav">
+			<div data-role=navbar>
+			  <ul>
+				<li><a href=#inicio data-transition="none">Inicio</a></li>
+				<li><a href=#denuncia data-transition="none">Denuncia</a></li>
+				<li><a href=#lineaayuda data-transition="none">LineaAyuda</a></li>
+				<li><a href=#test data-transition="none">Test</a></li>
+			  </ul>
+			</div>
+		</div><!-- /footer -->
 
 	</div>
 	
-	<div data-role=page id="inicio" data-theme="a">
+	<!-- Inicio -->
+
+	<div data-role=page id="inicio" data-theme="b">
 	
 		<div data-role="header" style="overflow:hidden;">
 			<h1>PROTÉGETE</h1>
@@ -65,8 +104,8 @@
 		<div data-role="content" id="paginainicio">
 			
 			<p align="center">
-				<a href="#denuncia" data-transition="none"><img src="img/rojo.jpg"></a><br>
-				<a href="#lineaayuda" data-transition="none"><img src="img/verde.jpg"></a><br>
+				<a href="#denuncia" data-transition="none"><img src="img/rojo.jpg" width="100%"></a><br>
+				<a href="#lineaayuda" data-transition="none"><img src="img/verde.jpg" width="100%"></a><br>
 			</p>
 			<p align="center">¿Sábes qué es el cyberbullying?</p>
 			<p align="center"><a href="#test" data-role="button" data-inline="true" data-transition="none">Haz el test</a></p>
@@ -79,7 +118,7 @@
 			  <ul>
 				<li><a href=#inicio class="ui-btn-active ui-state-persist" data-transition="none">Inicio</a></li>
 				<li><a href=#denuncia data-transition="none">Denuncia</a></li>
-				<li><a href=#lineaayuda data-transition="none">Linea Ayuda</a></li>
+				<li><a href=#lineaayuda data-transition="none">LineaAyuda</a></li>
 				<li><a href=#test data-transition="none">Test</a></li>
 			  </ul>
 			</div>
@@ -112,6 +151,7 @@
 			<p><a href="#contenidosilegales" data-rel="popup" data-inline="true" data-position-to="window">¿Qué contenidos son ilegales o dañinos?</a></p>
 			<div data-role="popup" id="contenidosilegales" class="ui-content" style="max-width:400px" data-dismissible="false">
 				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<font size="2">
 				<p align="justify">En esta Línea puedes informar sobre cualquier contenido ilegal, pero de forma prioritaria sobre <strong>imágenes de abusos sexuales contra menores de edad</strong> (pornografía infantil).</p>
 				<p align="justify">También puedes informar sobre contenidos dañinos, tanto si son ilegales en el país de origen como si no lo son. Así, puedes comunicar la presencia de:</p>
 				<ul>
@@ -120,6 +160,7 @@
 					<li><strong>Sexting</strong> entre menores.</li>
 				</ul>
 				<p align="justify">Y cualquier otro contenido que te haga sentir mal.</p>
+				</font>
 			</div>
 			
 			<form>
@@ -147,7 +188,7 @@
 			  <ul>
 				<li><a href=#inicio data-transition="none">Inicio</a></li>
 				<li><a href=#denuncia class="ui-btn-active ui-state-persist" data-transition="none">Denuncia</a></li>
-				<li><a href=#lineaayuda data-transition="none">Linea Ayuda</a></li>
+				<li><a href=#lineaayuda data-transition="none">LineaAyuda</a></li>
 				<li><a href=#test data-transition="none">Test</a></li>
 			  </ul>
 			</div>
@@ -157,47 +198,56 @@
 	
 	<!-- LineaAyuda -->
 	
-	<div data-role=page id="lineaayuda" data-theme="a">
+	<div data-role=page id="lineaayuda" data-theme="d">
 
-		<div data-role="header" style="overflow:hidden;">
+		<div data-role="header" style="overflow:hidden;" data-theme="d">
 			<h1>PROTÉGETE</h1>
 			<a href="#acercade" data-icon="info" class="ui-btn-right" data-transition="none">Info</a>
 			<img src="img/protegete.jpg" height="36" width="36" class="ui-btn-left">
 		</div><!-- /header -->	
 
-		<div data-role="content" data-theme="a" id="paginaayuda">
+		<div data-role="content" data-theme="d" id="paginaayuda">
 		
-			<p>En esta sección puedes describir una situación que te resulte incómoda o perjudicial.</p>
+			<p>Aquí puedes pedir ayuda. No olvides incluir un correo electrónico.</p>
 			
 			<p><a href="#quienayuda" data-rel="popup" data-inline="true" data-position-to="window">¿Quién me va a ayudar?</a></p>
 			<div data-role="popup" id="quienayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<p align="justify">Contenido por determinar.</p>
+				<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<p align="justify">La Línea de Ayuda de PROTÉGETE está formada profesionales que trabajan para ti.</p>
+				<p align="justify">Un equipo de <em>psicólogos</em>, <em>abogados</em>, <em>técnicos informáticos</em> y <em>expertos</em> en seguridad del Centro de Seguridad en Internet de <strong>protegeles.com</strong>, atiende las consultas o peticiones de ayuda que quieras hacerle.</p>
+				<p align="justify"><strong>Toda la ayuda es profesional, GRATUITA y anónima.</strong></p>
 			</div>
 
 			<p><a href="#situacionesayuda" data-rel="popup" data-inline="true" data-position-to="window">¿Ante qué situaciones puedo pedir ayuda?</a></p>
 			<div data-role="popup" id="situacionesayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
-				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<p align="justify">Contenido por determinar.</p>
+				<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<p align="justify">Los profesionales de <strong>protegeles.com</strong> te ayudarán si:</p>
+				<ul>
+					<li>Sufres acoso escolar en internet (ciberbullying).</li>
+					<li>Alguien te acosa sexualmente en Internet o te pide fotos sin ropa.</li>
+					<li>Alguien ha usurpado tu identidad, haciéndose pasar por ti en internet.</li>
+					<li>Alguien está difundiendo fotos tuyas, o tus datos personales.</li>
+					<li>Otras situaciones que te hagan sentir mal.</li>
+				</li>
 			</div>
 
 			<form>
 					<p align="center"><strong>Describe la situación o el problema:</strong>
 					<label for="url" class="ui-hidden-accessible">Contenido:</label>
 					<textarea cols="40" rows="8" name="contenidoayuda" id="contenidoayuda" value="" placeholder="Esta es la situación" data-theme="a"></textarea>
-					<button type="submit" data-theme="a" data-icon="check" onclick="showPopup()" data-inline="true">Enviar</button>
+					<button type="submit" data-theme="d" data-icon="check" onclick="showPopup()" data-inline="true">Enviar</button>
 					</p>
 			</form>
 				
 		</div><!-- /content -->
 		
 		<!-- Navegacion -->
-		<div data-role=footer data-position=fixed id="nav">
+		<div data-role=footer data-position=fixed id="nav" data-theme="d">
 			<div data-role=navbar>
 			  <ul>
 				<li><a href=#inicio data-transition="none">Inicio</a></li>
 				<li><a href=#denuncia data-transition="none">Denuncia</a></li>
-				<li><a href=#lineaayuda class="ui-btn-active ui-state-persist" data-transition="none">Linea Ayuda</a></li>
+				<li><a href=#lineaayuda class="ui-btn-active ui-state-persist" data-transition="none">LineaAyuda</a></li>
 				<li><a href=#test data-transition="none">Test</a></li>
 			  </ul>
 			</div>
@@ -207,34 +257,34 @@
 	
 	<!-- Test -->
 	
-	<div data-role=page id="test" data-theme="a">
+	<div data-role=page id="test" data-theme="c">
 	
-		<div data-role="header" style="overflow:hidden;">
+		<div data-role="header" style="overflow:hidden;" data-theme="c">
 			<h1>PROTÉGETE</h1>
 			<a href="#acercade" data-icon="info" class="ui-btn-right" data-transition="none">Info</a>
 			<img src="img/protegete.jpg" height="36" width="36" class="ui-btn-left">
 		</div><!-- /header -->
 
 		<div data-role="content">
-		
-			<H1>Test de autoevaluación</H1>
-
-			<P>
+			
+			<p align="justify">¿Qué sabes del <strong>ciberbullying</strong>? ¿Y del <strong>sexting</strong>?
+			</p>
+			<P align="justify">
 			Utiliza este test para averiguar tus conocimientos sobre seguridad en Internet.
 			</P>
-			<P>
-			Pulsa *aquí* para comenzar el test.
+			<P align="center">
+			<a href="#test1" data-role="button" data-inline="true" data-transition="none">Empezar</a>
 			</p>
 			
 		</div><!-- /content -->
 		
 		<!-- Navegacion -->
-		<div data-role=footer data-position=fixed id="nav">
+		<div data-role=footer data-position=fixed id="nav" data-theme="c">
 			<div data-role=navbar>
 			  <ul>
 				<li><a href=#inicio data-transition="none">Inicio</a></li>
 				<li><a href=#denuncia data-transition="none">Denuncia</a></li>
-				<li><a href=#lineaayuda data-transition="none">Linea Ayuda</a></li>
+				<li><a href=#lineaayuda data-transition="none">LineaAyuda</a></li>
 				<li><a href=#test class="ui-btn-active ui-state-persist" data-transition="none">Test</a></li>
 			  </ul>
 			</div>
@@ -242,42 +292,50 @@
 
 	</div>
 
-	<!-- AcercaDe -->
-		
-	<div data-role=page id="acercade" data-theme="a">
+	<!-- Test1 -->
 	
-		<div data-role="header" style="overflow:hidden;">
+	<div data-role=page id="test1" data-theme="c">
+	
+		<div data-role="header" style="overflow:hidden;" data-theme="c">
 			<h1>PROTÉGETE</h1>
-			<a href="#somos" data-icon="info" class="ui-btn-right" data-transition="none">Info</a>
+			<a href="#acercade" data-icon="info" class="ui-btn-right" data-transition="none">Info</a>
 			<img src="img/protegete.jpg" height="36" width="36" class="ui-btn-left">
 		</div><!-- /header -->
 
 		<div data-role="content">
 			
-			<p align=center>
-			<img src="img/protegete2.jpg" height="80">
-			</p>
+			<p align="center"><strong>¡Mide tus conocimientos!</strong></p>
+
+			<p align="justify">¿Qué es el ciberbullying o acoso escolar en internet?</p>
 			
-			<font size="2">
-			<P align="justify">
-			<strong>PROTÉGETE</strong> es la <strong>Línea de Ayuda y Denuncia</strong> para menores de edad, desarrollada por <strong>PROTEGELES</strong> con el apoyo de la <strong>Comisión Europea</strong>, yen colaboración con <strong>TELEFÓNICA</strong>, <strong>VODAFONE</strong>, <strong>ORANGE</strong> y <strong>YOIGO</strong>.
+			<p>
+			<table>
+				<tr>
+					<td><a href="#" data-role="button" data-inline="true">A</a></td>
+					<td>Es cuando te insultan o te amenazan<br>en internet.</td>
+				</tr>
+				<tr>
+					<td><a href="#" data-role="button" data-inline="true">B</a></td>
+					<td>Es cuando un compañero/a del colegio se dedica a molestarte, insultarte o amenazarte con regularidad en internet.</td>
+				</tr>
+			</table>
 			</p>
-			</font>
-			
-			<p align=center >
-			<img src="img/logos.jpg" height="80">
-			</p>
+
+			<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" onClick="newPage('#')">
+			<label for="radio-choice-1">Es cuando te insultan o te amenazan en internet.</label>
+			<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2" onClick="newPage('#')">
+			<label for="radio-choice-2">Es cuando un compañero/a del colegio se dedica a molestarte, insultarte o amenazarte con regularidad en internet.</label>
 			
 		</div><!-- /content -->
 		
 		<!-- Navegacion -->
-		<div data-role=footer data-position=fixed id="nav">
+		<div data-role=footer data-position=fixed id="nav" data-theme="c">
 			<div data-role=navbar>
 			  <ul>
 				<li><a href=#inicio data-transition="none">Inicio</a></li>
 				<li><a href=#denuncia data-transition="none">Denuncia</a></li>
-				<li><a href=#lineaayuda data-transition="none">Linea Ayuda</a></li>
-				<li><a href=#test data-transition="none">Test</a></li>
+				<li><a href=#lineaayuda data-transition="none">LineaAyuda</a></li>
+				<li><a href=#test class="ui-btn-active ui-state-persist" data-transition="none">Test</a></li>
 			  </ul>
 			</div>
 		</div><!-- /footer -->
