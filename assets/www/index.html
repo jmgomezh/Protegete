@@ -12,14 +12,6 @@
   <script src=js/jquery-1.10.2.min.js></script>
   <script src=js/jquery.mobile-1.3.2.min.js></script>
   -->
-	<script>
-	
-	function showPopup()
-	{
-		alert("Denuncia enviada\nMuchas gracias\npor su colaboración");
-	}
-	
-	</script>
 	<style type="text/css">
 	
 	h1{
@@ -49,7 +41,25 @@
 <BODY>
 
 	<script>
+		
+		// Prevent hardware back button usage
+		$(document).bind('keydown', function(event) {
+		  if (event.keyCode == 27) {
+			// Prevent default (disable the back button behavior)
+			event.preventDefault();
+			// Your code to show another page or whatever...
+		  }
+		});
+		
+		// Load JavaScripts faster
 		head.js("js/jquery-1.10.2.min.js","js/jquery.mobile-1.3.2.min.js");
+		
+		// Function for popups, temporary
+		function showPopup()
+		{
+			alert("Denuncia enviada\nMuchas gracias\npor su colaboración");
+		}
+		
 	</script>
 	
 	<!-- Portada -->
