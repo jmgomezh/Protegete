@@ -7,11 +7,10 @@
   <link rel=stylesheet href=css/jquery.mobile.structure-1.3.2.min.css />
   <link rel=stylesheet href=css/protegete-v5.min.css />
   <link href=' http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <script src=js/head.load.min.js></script>
-  <!--
+<!--   <script src=js/head.load.min.js></script>
+ -->
   <script src=js/jquery-1.10.2.min.js></script>
   <script src=js/jquery.mobile-1.3.2.min.js></script>
-  -->
 	<style type="text/css">
 	
 	h1{
@@ -42,16 +41,16 @@
 	<script>
 		
 		// Load JavaScripts faster
-		head.js("js/jquery-1.10.2.min.js","js/jquery.mobile-1.3.2.min.js");
+		// head.js("js/jquery-1.10.2.min.js","js/jquery.mobile-1.3.2.min.js");
 		
 		// Prevent hardware back button usage
-		$(document).bind('keydown', function(event) {
-		  if (event.keyCode == 27) {
+		// $(document).bind('keydown', function(event) {
+		//  if (event.keyCode == 27) {
 			// Prevent default (disable the back button behavior)
-			event.preventDefault();
+		//	event.preventDefault();
 			// Your code to show another page or whatever...
-		  }
-		});
+		//  }
+		// });
 
 		function sendDenunciaURL()
 		{
