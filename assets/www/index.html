@@ -51,7 +51,17 @@
 			// Your code to show another page or whatever...
 		//  }
 		// });
+		
+		// Prevent hardware back button usage
+		function onDeviceReady() {
+			document.addEventListener("backbutton", backKeyDown, true);
+			console.log("PhoneGap is ready");
+		}
+		function backKeyDown() {
+			navigator.app.exitApp();
+		}
 
+		// Send denuncia URL
 		function sendDenunciaURL()
 		{
 			var xmlhttp = new XMLHttpRequest();
