@@ -43,8 +43,14 @@
       <preference name="disallowOverscroll" value="true" />
     -->
 	<preference name="orientation" value="portrait" />
-	<gap:splash gap:platform="ios" height="480" src="res/img/portada.png" width="320" />
 	<preference name="prerendered-icon" value="true" />
+	<!--
+	<splash gap:platform="ios" height="480" src="res/img/portada.png" width="320" />
+	<icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
+	<icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
+	<icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
+	<icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
+	-->
 	
 	<!-- Preferences for iOS -->
     <preference name="AllowInlineMediaPlayback" value="false" />
