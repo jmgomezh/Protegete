@@ -44,7 +44,7 @@
     -->
 	<preference name="orientation" value="portrait" />
 	<preference name="prerendered-icon" value="true" />
-	<splash gap:platform="ios" height="480" src="Platforms/ios/Protegete/Resources/splash/Default~iphone.png" width="320" />
+	<gap:splash gap:platform="ios" height="480" src="Platforms/ios/Protegete/Resources/splash/Default~iphone.png" width="320" />
 	<icon gap:platform="ios" height="57" src="Platforms/ios/Protegete/Resources/icons/icon-57.png" width="57" />
 	<icon gap:platform="ios" height="72" src="Platforms/ios/Protegete/Resources/icons/icon-72.png" width="72" />
 	<icon gap:platform="ios" height="114" src="Platforms/ios/Protegete/Resources/icons/icon-57@2x.png" width="114" />
