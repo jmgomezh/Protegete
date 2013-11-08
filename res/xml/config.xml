@@ -36,13 +36,15 @@
     <content src="index.html" />
 
     <preference name="loglevel" value="DEBUG" />
-      <preference name="splashscreen" value="img/portada.jpg" />
     <!--
+      <preference name="splashscreen" value="img/portada.jpg" />
       <preference name="backgroundColor" value="0xFFF" />
       <preference name="loadUrlTimeoutValue" value="20000" />
       <preference name="InAppBrowserStorageEnabled" value="true" />
       <preference name="disallowOverscroll" value="true" />
     -->
+	
+	<gap:splash gap:platform="ios" height="480" src="res/img/portada.png" width="320" />
 
     <feature name="App">
       <param name="android-package" value="org.apache.cordova.App"/>
