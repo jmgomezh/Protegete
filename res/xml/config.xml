@@ -32,7 +32,6 @@
 
     <access origin="*"/>
 
-    <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
     <content src="index.html" />
 
     <preference name="loglevel" value="DEBUG" />
@@ -46,6 +45,23 @@
 	<preference name="orientation" value="portrait" />
 	<gap:splash gap:platform="ios" height="480" src="res/img/portada.png" width="320" />
 	<preference name="prerendered-icon" value="true" />
+	
+	<!-- Preferences for iOS -->
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="false" />
+    <preference name="EnableLocation" value="false" /><!-- DEPRECATED -->
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value=".25" />
+    <preference name="HideKeyboardFormAccessoryBar" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="KeyboardShrinksView" value="false" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="true" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="TopActivityIndicator" value="gray" />
 
     <feature name="App">
       <param name="android-package" value="org.apache.cordova.App"/>
