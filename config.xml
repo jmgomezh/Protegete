@@ -18,26 +18,43 @@
  under the License.
 -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        id        = "io.cordova.helloCordova"
-        version   = "2.0.0">
-    <name>Hello Cordova</name>
+        id        = "es.protegeles.protegete"
+        version   = "1.0">
+    <name>Protegete</name>
 
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        PROTEGELES Protegete App.
     </description>
 
-    <author href="http://cordova.io" email="dev@cordova.apache.org">
-        Apache Cordova Team
+    <author href="http://www.protegeles.com" email="contacto@protegeles.com">
+        (c) PROTEGELES
     </author>
 
     <access origin="*"/>
 
-    <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
     <content src="index.html" />
 
-    <!-- Preferences for iOS -->
+    <preference name="loglevel" value="DEBUG" />
+    <!--
+      <preference name="splashscreen" value="img/portada.jpg" />
+      <preference name="backgroundColor" value="0xFFF" />
+      <preference name="loadUrlTimeoutValue" value="20000" />
+      <preference name="InAppBrowserStorageEnabled" value="true" />
+      <preference name="disallowOverscroll" value="true" />
+    -->
+	<preference name="orientation" value="portrait" />
+	<preference name="prerendered-icon" value="true" />
+	<!--
+	<splash gap:platform="ios" height="480" src="res/img/portada.png" width="320" />
+	<icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
+	<icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
+	<icon gap:platform="ios" height="114" src="res/icon/ios/icon-57-2x.png" width="114" />
+	<icon gap:platform="ios" height="144" src="res/icon/ios/icon-72-2x.png" width="144" />
+	-->
+	
+	<!-- Preferences for iOS -->
     <preference name="AllowInlineMediaPlayback" value="false" />
-    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="AutoHideSplashScreen" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
     <preference name="DisallowOverscroll" value="false" />
     <preference name="EnableLocation" value="false" /><!-- DEPRECATED -->
@@ -52,65 +69,64 @@
     <preference name="SuppressesIncrementalRendering" value="false" />
     <preference name="TopActivityIndicator" value="gray" />
 
-
+    <feature name="App">
+      <param name="android-package" value="org.apache.cordova.App"/>
+    </feature>
     <feature name="Geolocation">
-      <param name="ios-package" value="CDVLocation"/>
+      <param name="android-package" value="org.apache.cordova.GeoBroker"/>
     </feature>
     <feature name="Device">
-      <param name="ios-package" value="CDVDevice"/>
+      <param name="android-package" value="org.apache.cordova.Device"/>
     </feature>
     <feature name="Accelerometer">
-      <param name="ios-package" value="CDVAccelerometer"/>
+      <param name="android-package" value="org.apache.cordova.AccelListener"/>
     </feature>
     <feature name="Compass">
-      <param name="ios-package" value="CDVLocation"/>
+      <param name="android-package" value="org.apache.cordova.CompassListener"/>
     </feature>
     <feature name="Media">
-      <param name="ios-package" value="CDVSound"/>
+      <param name="android-package" value="org.apache.cordova.AudioHandler"/>
     </feature>
     <feature name="Camera">
-      <param name="ios-package" value="CDVCamera"/>
+      <param name="android-package" value="org.apache.cordova.CameraLauncher"/>
     </feature>
     <feature name="Contacts">
-      <param name="ios-package" value="CDVContacts"/>
+      <param name="android-package" value="org.apache.cordova.ContactManager"/>
     </feature>
     <feature name="File">
-      <param name="ios-package"  value="CDVFile"/>
+      <param name="android-package" value="org.apache.cordova.FileUtils"/>
     </feature>
     <feature name="NetworkStatus">
-      <param name="ios-package" value="CDVConnection"/>
+      <param name="android-package" value="org.apache.cordova.NetworkManager"/>
     </feature>
     <feature name="Notification">
-      <param name="ios-package" value="CDVNotification"/>
+      <param name="android-package" value="org.apache.cordova.Notification"/>
+    </feature>
+    <feature name="Storage">
+      <param name="android-package" value="org.apache.cordova.Storage"/>
     </feature>
     <feature name="FileTransfer">
-      <param name="ios-package" value="CDVFileTransfer"/>
+      <param name="android-package" value="org.apache.cordova.FileTransfer"/>
     </feature>
     <feature name="Capture">
-      <param name="ios-package" value="CDVCapture"/>
+      <param name="android-package" value="org.apache.cordova.Capture"/>
     </feature>
     <feature name="Battery">
-      <param name="ios-package" value="CDVBattery"/>
+      <param name="android-package" value="org.apache.cordova.BatteryListener"/>
     </feature>
     <feature name="SplashScreen">
-      <param name="ios-package" value="CDVSplashScreen"/>
+      <param name="android-package" value="org.apache.cordova.SplashScreen"/>
     </feature>
     <feature name="Echo">
-      <param name="ios-package" value="CDVEcho"/>
+      <param name="android-package" value="org.apache.cordova.Echo"/>
     </feature>
     <feature name="Globalization">
-      <param name="ios-package" value="CDVGlobalization"/>
+      <param name="android-package" value="org.apache.cordova.Globalization"/>
     </feature>
     <feature name="InAppBrowser">
-      <param name="ios-package" value="CDVInAppBrowser"/>
+      <param name="android-package" value="org.apache.cordova.InAppBrowser"/>
     </feature>
-    <feature name="Logger">
-      <param name="ios-package" value="CDVLogger"/>
-    </feature>
-    <feature name="LocalStorage">
-        <param name="ios-package" value="CDVLocalStorage"/>
-    </feature>
-    <!-- Deprecated plugins element. REmove in 3.0 -->
+    <!-- Deprecated plugins element. Remove in 3.0 -->
     <plugins>
     </plugins>
 </widget>
