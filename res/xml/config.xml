@@ -43,7 +43,7 @@
       <preference name="InAppBrowserStorageEnabled" value="true" />
       <preference name="disallowOverscroll" value="true" />
     -->
-	
+	<preference name="orientation" value="portrait" />
 	<gap:splash gap:platform="ios" height="480" src="res/img/portada.png" width="320" />
 
     <feature name="App">
