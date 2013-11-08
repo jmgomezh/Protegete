@@ -18,16 +18,16 @@
  under the License.
 -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        id        = "io.cordova.helloCordova"
-        version   = "2.0.0">
+        id        = "es.protegeles.protegete"
+        version   = "1.0">
     <name>Protegete</name>
 
     <description>
         PROTEGELES Protegete App.
     </description>
 
-    <author href="http://cordova.io" email="dev@cordova.apache.org">
-        @ PROTEGELES
+    <author href="http://www.protegeles.com" email="contacto@protegeles.com">
+        (c) PROTEGELES
     </author>
 
     <access origin="*"/>
@@ -45,6 +45,7 @@
     -->
 	<preference name="orientation" value="portrait" />
 	<gap:splash gap:platform="ios" height="480" src="res/img/portada.png" width="320" />
+	<preference name="prerendered-icon" value="true" />
 
     <feature name="App">
       <param name="android-package" value="org.apache.cordova.App"/>
