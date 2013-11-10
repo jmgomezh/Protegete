@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
-        id        = "io.cordova.helloCordova"
-        version   = "2.0.0">
+        id        = "es.protegeles.protegete"
+        version   = "1.0">
     <name>Hello Cordova</name>
 
     <description>
