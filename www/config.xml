@@ -16,8 +16,8 @@
     <access origin="*"/>
 
     <preference name="phonegap-version"           value="2.9.0" />          <!-- all: current version of PhoneGap -->
-    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
-    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="handset" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
@@ -33,8 +33,6 @@
 
     <!-- More preferences for IOS, added by app author -->
     
-    <preference name="orientation" value="portrait" />
-    <preference name="target-device" value="handset" />
     <icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
     <icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
     <icon src="res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
@@ -46,6 +44,5 @@
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="768" height="1004" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="2048" height="1496" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="1536" height="2008" />
-
 
 </widget>
