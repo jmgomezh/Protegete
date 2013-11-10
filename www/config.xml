@@ -35,10 +35,16 @@
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
     <content src="index.html" />
 
-    <!-- Preferences for iOS -->
+    <!-- General preferences -->
     <preference name="phonegap-version" value="2.9.0" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="handset" />
+
+    <!-- Preferences for IOS -->
+    <gap:splash src="res/screen/ios/screen-iphone-portrait.png"    gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
 
 
 </widget>
