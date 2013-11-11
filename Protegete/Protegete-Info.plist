@@ -26,7 +26,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>es.protegeles.protegete</string>
+	<string>com.protegeles.protegete</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
