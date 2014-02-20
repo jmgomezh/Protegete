@@ -62,7 +62,7 @@
 	
 	h1 { font-size: 40px; }
 	
-	p { font-size: 20px; }
+	p { font-size: 30px; }
 		
 	span.ui-btn-inner {
 		font-size: 30px;
@@ -106,7 +106,7 @@
 	
 		<div data-role="content" id="paginainicio">
 		
-			<h1 align="center">Elige una opción 9</h1>
+			<h1 align="center">Elige una opción 10</h1>
 			
 			<div align="left">
 				<img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png">
@@ -155,40 +155,40 @@
 			</h1>
 		
 			<p><a href="#denunciaanonima" data-role="button" data-rel="popup" data-position-to="window">¿Qué es una denuncia anónima?</a></p>
-			<div data-role="popup" id="denunciaanonima" class="ui-content" style="max-width:400px">
+			<div data-role="popup" id="denunciaanonima" class="ui-content" style="max-width:500px">
 				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 				<p align="justify">Cuando hablamos de <strong>denuncia anónima</strong>, queremos decir que toda la información que facilites sobre un contenido será recogida sin guardar <strong>ningún dato personal tuyo</strong>.</p>
 				<p align="justify">Es decir, en esta Línea se recoge la información que los usuarios envían, pero no quién la envía, ni desde dónde.</p>
 				<p align="justify">En PROTEGELES se comprueba si el contenido es ilegal o amenazante, y después se traslada a la unidad de Policía del país en el que se encuentre alojado el contenido, así como a la organización Internacional de Líneas de Denuncia (INHOPE).</p>
 			</div>
 			<p><a href="#contenidosilegales" data-role="button" data-rel="popup" data-position-to="window">¿Qué contenidos son ilegales o dañinos?</a></p>
-			<div data-role="popup" id="contenidosilegales" class="ui-content" style="max-width:400px">
+			<div data-role="popup" id="contenidosilegales" class="ui-content" style="max-width:500px">
 				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<p align="justify" style="font-size:1.5vw;">En esta Línea puedes informar sobre cualquier contenido ilegal, pero de forma prioritaria sobre <strong>imágenes de abusos sexuales contra menores de edad</strong> (pornografía infantil).</p>
-				<p align="justify" style="font-size:1.5vw;">También puedes informar sobre contenidos dañinos, tanto si son ilegales en el país de origen como si no lo son. Así, puedes comunicar la presencia de:</p>
-				<ul style="font-size:1.5vw;">
+				<p align="justify">En esta Línea puedes informar sobre cualquier contenido ilegal, pero de forma prioritaria sobre <strong>imágenes de abusos sexuales contra menores de edad</strong> (pornografía infantil).</p>
+				<p align="justify">También puedes informar sobre contenidos dañinos, tanto si son ilegales en el país de origen como si no lo son. Así, puedes comunicar la presencia de:</p>
+				<ul>
 					<li>Páginas o perfiles que promueven <strong>la Anorexia y la Bulimia</strong>.</li>
 					<li>Páginas o perfiles con imágenes de <strong>acoso escolar</strong>, o donde un menor de edad sea maltratado.</li>
 					<li><strong>Sexting</strong> entre menores.</li>
 				</ul>
-				<p align="justify" style="font-size:1.5vw;">Y cualquier otro contenido que te haga sentir mal.</p>
+				<p align="justify">Y cualquier otro contenido que te haga sentir mal.</p>
 			</div>
 			
 			<p><a href="#formulariodenuncia" data-role="button" data-rel="popup" data-position-to="window">Quiero efectuar una denuncia</a></p>
-			<div data-role="popup" id="formulariodenuncia" class="ui-content" style="max-width:400px">
+			<div data-role="popup" id="formulariodenuncia" class="ui-content" style="max-width:500px">
 				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 				
 				<form>
-					<p align="center" style="font-size:1.5vw;"><strong>Denuncia una URL:</strong>
-						<label for="url" class="ui-hidden-accessible"  style="font-size:1.5vw;">URL:</label>
+					<p align="center"><strong>Denuncia una URL:</strong>
+						<label for="url" class="ui-hidden-accessible" >URL:</label>
 						<input type="text" name="urldenuncia" id="urldenuncia" value="" placeholder="http://" data-theme="a">
 						<button type="submit" data-theme="a" data-icon="check" onclick="sendDenunciaURL()" data-inline="true">Enviar</button>
 					</p>
 				</form>
 
 				<form>
-					<p align="center" style="font-size:1.5vw;"><strong>Denuncia un contenido sin URL:</strong>
-						<label for="url" class="ui-hidden-accessible" style="font-size:1.5vw;">Contenido:</label>
+					<p align="center"><strong>Denuncia un contenido sin URL:</strong>
+						<label for="url" class="ui-hidden-accessible">Contenido:</label>
 						<textarea cols="40" rows="8" name="contenidoilegal" id="contenidoilegal" value="" placeholder="Describe el contenido" data-theme="a"></textarea>
 						<button type="submit" data-theme="a" data-icon="check" onclick="sendDenunciaNoURL()" data-inline="true">Enviar</button>
 					</p>
@@ -225,18 +225,18 @@
 
 			
 			<p><a href="#quienayuda" data-role="button" data-rel="popup" data-position-to="window">¿Quién me va a ayudar?</a></p>
-			<div data-role="popup" id="quienayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
+			<div data-role="popup" id="quienayuda" class="ui-content" style="max-width:500px" data-dismissible="false">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<p align="justify" style="font-size:1.5vw;">La Línea de Ayuda PROTÉGETE está formada por profesionales que trabajan para ti.</p>
-				<p align="justify" style="font-size:1.5vw;">Un equipo de <em>psicólogos</em>, <em>abogados</em>, <em>técnicos informáticos</em> y <em>expertos</em> en seguridad del Centro de Seguridad en Internet de <strong>protegeles.com</strong>, atiende las consultas o peticiones de ayuda que quieras hacerle.</p>
-				<p align="justify" style="font-size:1.5vw;"><strong>Toda la ayuda es profesional, GRATUITA y anónima.</strong></p>
+				<p align="justify">La Línea de Ayuda PROTÉGETE está formada por profesionales que trabajan para ti.</p>
+				<p align="justify">Un equipo de <em>psicólogos</em>, <em>abogados</em>, <em>técnicos informáticos</em> y <em>expertos</em> en seguridad del Centro de Seguridad en Internet de <strong>protegeles.com</strong>, atiende las consultas o peticiones de ayuda que quieras hacerle.</p>
+				<p align="justify"><strong>Toda la ayuda es profesional, GRATUITA y anónima.</strong></p>
 			</div>
 
 			<p><a href="#situacionesayuda" data-role="button" data-rel="popup" data-position-to="window">¿Ante qué situaciones puedo pedir ayuda?</a></p>
-			<div data-role="popup" id="situacionesayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
+			<div data-role="popup" id="situacionesayuda" class="ui-content" style="max-width:500px" data-dismissible="false">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<p align="justify" style="font-size:1.5vw;">Los profesionales de <strong>protegeles.com</strong> te ayudarán si:</p>
-				<ul style="font-size:1.5vw;">
+				<p align="justify">Los profesionales de <strong>protegeles.com</strong> te ayudarán si:</p>
+				<ul>
 					<li>Sufres acoso escolar en internet (ciberbullying).</li>
 					<li>Alguien te acosa sexualmente en Internet o te pide fotos sin ropa.</li>
 					<li>Alguien ha usurpado tu identidad, haciéndose pasar por ti en internet.</li>
@@ -246,11 +246,11 @@
 			</div>
 
 			<p><a href="#formularioayuda" data-role="button" data-rel="popup" data-position-to="window">Quiero pedir ayuda</a></p>
-			<div data-role="popup" id="formularioayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
+			<div data-role="popup" id="formularioayuda" class="ui-content" style="max-width:500px" data-dismissible="false">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 				<form id="miFormularioAyuda">
-					<p style="font-size:1.5vw;"><strong>Describe la situación o el problema. No olvides incluir una dirección de correo electrónico.</strong>
-					<label for="url" class="ui-hidden-accessible" style="font-size:1.5vw;">Contenido:</label>
+					<p><strong>Describe la situación o el problema. No olvides incluir una dirección de correo electrónico.</strong>
+					<label for="url" class="ui-hidden-accessible">Contenido:</label>
 					<textarea cols="40" rows="8" name="contenidoayuda" id="contenidoayuda" placeholder="Esta es la situación" data-theme="a"></textarea>
 					<div align="center">
 					<button type="submit" data-theme="a" data-icon="check" onclick="sendAyuda()" data-inline="true" align="center">Enviar</button>
@@ -321,7 +321,7 @@
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta01" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Cuando un compañero te envía un mensaje insultándote a través de internet.</a>
-				<div data-role="popup" id="incorrecta01" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="incorrecta01" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<p align="justify" style="font-size: 1.5vw;">Cuando un compañero te envía un mensaje insultándote a través de internet.</p>
 					<p align="center" style="font-size: 1.5vw;"><strong>INCORRECTO</strong></p>
@@ -329,7 +329,7 @@
 				</div>
 
 				<a href="#correcta01" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Cuando te molestan, te insultan o te amenazan con regularidad en internet.</a>
-				<div data-role="popup" id="correcta01" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="correcta01" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<p align="justify" style="font-size: 1.5vw;">Cuando te molestan, te insultan o te amenazan con regularidad en internet.</p>
 					<p align="center" style="font-size: 1.5vw;"><strong>¡CORRECTO!</strong></p>
@@ -367,7 +367,7 @@
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta02" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Cierto: Los menores de 14 años no tienen responsabilidad penal.</a>
-				<div data-role="popup" id="incorrecta02" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="incorrecta02" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Cierto: los menores de 14 años no tienen responsabilidad penal, así que no hay nada que hacer.</p>
@@ -377,7 +377,7 @@
 				</div>
 
 				<a href="#correcta02" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Falso: Podemos y debemos contarlo. Además, siempre hay alguien responsable.</a>
-				<div data-role="popup" id="correcta02" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="correcta02" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Falso: Podemos y debemos contarlo de la misma manera. Además, siempre hay alguien responsable, y en el caso de los menores de 14 años son sus padres.</p>
@@ -417,7 +417,7 @@
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta03" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">En efecto. Sólo pueden intervenir en situaciones dentro del centro.</a>
-				<div data-role="popup" id="incorrecta03" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="incorrecta03" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">En efecto. El colegio o instituto sólo puede intervenir en las situaciones que se produzcan dentro del centro educativo.</p>
@@ -427,7 +427,7 @@
 				</div>
 
 				<a href="#correcta03" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">No es así. Tienen la obligación de intervenir si víctima y agresor/es son del mismo centro.</a>
-				<div data-role="popup" id="correcta03" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="correcta03" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">No es así. Los centros escolares tienen la obligación de intervenir en los casos de acoso escolar, aunque se produzcan fuera del centro, si víctima y agresor/es son del mismo colegio o instituto.</p>
@@ -467,7 +467,7 @@
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta04" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">En efecto, ya que puede distribuirlas o publicarlas en algún sitio.</a>
-				<div data-role="popup" id="incorrecta04" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="incorrecta04" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">En efecto. Si se enfada puede distribuirlas o publicarlas en algún sitio.</p>
@@ -477,7 +477,7 @@
 				</div>
 
 				<a href="#correcta04" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Nunca se debe aceptar un chantaje. Lo mejor es contarlo y pedir ayuda.</a>
-				<div data-role="popup" id="correcta04" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="correcta04" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Nunca se debe aceptar un chantaje. Lo mejor es contarlo a nuestros padres, pedir ayuda a la Línea de Ayuda sobre acoso sexual en internet, y si es necesario denunciar la situación a la Policía o Guardia Civil.</p>
@@ -517,7 +517,7 @@
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta05" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Claro, si la usas bien y sólo de vez en cuando, no hay ningún problema.</a>
-				<div data-role="popup" id="incorrecta05" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="incorrecta05" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Claro, si la usas sólo de vez en cuando y la usas bien no hay ningún problema.</p>
@@ -527,7 +527,7 @@
 				</div>
 
 				<a href="#correcta05" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Aunque no la uses para nada malo, es necesario tenerla tapada. Si no la usas, mejor bloquearla.</a>
-				<div data-role="popup" id="correcta05" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="correcta05" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Aunque no la utilices para nada incorrecto y hagas un buen uso, es necesario tenerla tapada. Si no la utilizas nunca es mejor bloquearla.</p>
@@ -567,7 +567,7 @@
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta06" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Si no fueran seguras no estarían colgadas.</a>
-				<div data-role="popup" id="incorrecta06" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="incorrecta06" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Si no fueran seguras no estarían colgadas. No pasa nada por instalárselas.</p>
@@ -577,7 +577,7 @@
 				</div>
 
 				<a href="#correcta06" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Hay que leerse las condiciones que estás aceptando.</a>
-				<div data-role="popup" id="correcta06" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="correcta06" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Hay que leerse las condiciones que estás aceptando al instalártelas. Lo importante no es sólo la seguridad, sino también la privacidad.</p>
@@ -617,7 +617,7 @@
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#correcta07" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">No reenviando la foto, pues sería tan responsable como el que la hizo e inició la cadena.</a>
-				<div data-role="popup" id="correcta07" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="correcta07" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">No reenviando la foto, ya que pasándosela a más contactos soy tan responsable como el que hizo la foto e inició la cadena.</p>
@@ -627,7 +627,7 @@
 				</div>
 
 				<a href="#incorrecta07" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Reenviando la foto a más contactos. Yo no he hecho la foto y no tengo ninguna responsabilidad.</a>
-				<div data-role="popup" id="incorrecta07" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="incorrecta07" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Reenviando la foto a más contactos. Además, yo no he hecho la foto y no tengo ninguna responsabilidad al respecto.</p>
@@ -667,7 +667,7 @@
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#correcta08" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">La reviso periódicamente por si actualizan las opciones de seguridad o herramientas.</a>
-				<div data-role="popup" id="correcta08" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="correcta08" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">La reviso periódicamente por si actualizan las opciones de seguridad o herramientas. Así me aseguro de que todo esté configurado como debiera.</p>
@@ -677,7 +677,7 @@
 				</div>
 
 				<a href="#incorrecta08" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Me quedo tranquil@ y no la reviso más, para eso la he configurado correctamente desde el principio.</a>
-				<div data-role="popup" id="incorrecta08" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="incorrecta08" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Me quedo tranquil@ y no la reviso más, para eso la he configurado correctamente desde el principio.</p>
@@ -717,7 +717,7 @@
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#correcta09" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">No puedo estar tan seguro, ya que es posible que la imagen sea una grabación de otra persona.</a>
-				<div data-role="popup" id="correcta09" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="correcta09" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">No puedo estar tan seguro de que sea quien dice ser, ya que es posible que la imagen que veo a través de la webcam sea una grabación hecha antes a otra persona.</p>
@@ -727,7 +727,7 @@
 				</div>
 
 				<a href="#incorrecta09" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Sí, claro. Estoy viendo la imagen moverse y sus mensajes me están llegando correctamente.</a>
-				<div data-role="popup" id="incorrecta09" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="incorrecta09" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Sí, claro. Estoy viendo la imagen moverse y sus mensajes me están llegando correctamente.</p>
@@ -767,7 +767,7 @@
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#correcta10" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">No puedo controlarlas. No sé qué pueden hacer con mis fotos los que las ven, ni si las copian o no.</a>
-				<div data-role="popup" id="correcta10" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="correcta10" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">No puedo controlarlas. No sé qué pueden hacer con mis fotos los amigos o conocidos que las ven, ni si las copian o no.</p>
@@ -777,7 +777,7 @@
 				</div>
 
 				<a href="#incorrecta10" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Puedo controlarlas gracias a las opciones de las redes sociales, decidir quién las ve y eliminarlas.</a>
-				<div data-role="popup" id="incorrecta10" class="ui-content" style="max-width:400px">
+				<div data-role="popup" id="incorrecta10" class="ui-content" style="max-width:500px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 					<font size="2">
 					<p align="justify">Sí puedo controlarlas. Gracias a las opciones de las redes sociales puedo decidir quién ve mis fotos y eliminarlas cuando quiera.</p>
