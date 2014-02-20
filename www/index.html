@@ -88,7 +88,7 @@
 	
 		<div data-role="content">
 		
-			<div style="height: 900px;"></div>
+			<div style="height: 700px;"></div>
 			<p align="center"><a href="#inicio" data-role="button" data-inline="true" data-transition="none">Inicio</a></p>
 			
 		</div><!-- /content -->
@@ -108,7 +108,7 @@
 	
 		<div data-role="content" id="paginainicio">
 		
-			<h1 align="center">Elige una opción 11</h1>
+			<h1 align="center">Elige una opción 12</h1>
 			
 			<div align="left">
 				<img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png">
@@ -152,7 +152,7 @@
 		<div data-role="content" id="paginadenuncia">
 				
 			<h1 align="center">
-			<img src="img/icono_denuncia.png" style="height:40px;vertical-align:middle;">
+			<img src="img/icono_denuncia.png" style="height:50px;vertical-align:middle;">
 			Línea de denuncia
 			</h1>
 		
@@ -218,16 +218,20 @@
 	<div data-role=page id="lineaayuda" data-theme="c" style="background-image:url(img/fondo_ayuda.jpg);background-repeat:no-repeat;background-position:top center;background-size:cover;">
 
 		<div data-role="header" style="overflow:hidden;">
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
+			<div style="height: 80px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+		</div><!-- /header -->
+
 		<div data-role="content" id="paginaayuda">
 					
-			<p align="center" style="font-size:3vw;">
-			<img src="img/icono_ayuda.png" style="height:40px;vertical-align:middle;">
+			<h1 align="center">
+			<img src="img/icono_ayuda.png" style="height:50px;vertical-align:middle;">
 			Línea de ayuda
-			</p>
+			</h1>
 
-			
 			<p><a href="#quienayuda" data-role="button" data-rel="popup" data-position-to="window">¿Quién me va a ayudar?</a></p>
-			<div data-role="popup" id="quienayuda" class="ui-content" style="max-width:500px" data-dismissible="false">
+			<div data-role="popup" id="quienayuda" class="ui-content" style="max-width:500px">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 				<p align="justify">La Línea de Ayuda PROTÉGETE está formada por profesionales que trabajan para ti.</p>
 				<p align="justify">Un equipo de <em>psicólogos</em>, <em>abogados</em>, <em>técnicos informáticos</em> y <em>expertos</em> en seguridad del Centro de Seguridad en Internet de <strong>protegeles.com</strong>, atiende las consultas o peticiones de ayuda que quieras hacerle.</p>
@@ -235,7 +239,7 @@
 			</div>
 
 			<p><a href="#situacionesayuda" data-role="button" data-rel="popup" data-position-to="window">¿Ante qué situaciones puedo pedir ayuda?</a></p>
-			<div data-role="popup" id="situacionesayuda" class="ui-content" style="max-width:500px" data-dismissible="false">
+			<div data-role="popup" id="situacionesayuda" class="ui-content" style="max-width:500px">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 				<p align="justify">Los profesionales de <strong>protegeles.com</strong> te ayudarán si:</p>
 				<ul>
@@ -248,7 +252,7 @@
 			</div>
 
 			<p><a href="#formularioayuda" data-role="button" data-rel="popup" data-position-to="window">Quiero pedir ayuda</a></p>
-			<div data-role="popup" id="formularioayuda" class="ui-content" style="max-width:500px" data-dismissible="false">
+			<div data-role="popup" id="formularioayuda" class="ui-content" style="max-width:500px">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 				<form id="miFormularioAyuda">
 					<p><strong>Describe la situación o el problema. No olvides incluir una dirección de correo electrónico.</strong>
