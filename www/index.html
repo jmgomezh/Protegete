@@ -59,20 +59,9 @@
 	</script>
 	
 	<style type="text/css">
-	
-	h1{
-		font-family: 'Open Sans'
-		width:400px;
-		font-weight: normal;
-		color: #ffffff;
-		padding:5px 0;
-		<--! margin:20px 0 40px 0; -->
-		<--! background:url(img/h1.png); -->
-		text-align:center;
-	}
-	
+		
 	span.ui-btn-inner {
-		font-size: 13px;
+		font-size: 2vw;
 		white-space: normal;
 	}
 	
@@ -113,7 +102,7 @@
 	
 		<div data-role="content" id="paginainicio">
 		
-			<p align="center" style="font-size:18pt;">Elige una opción</p>
+			<p align="center" style="font-size:3vw;">Elige una opción</p>
 			
 			<div align="left">
 				<img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png">
@@ -156,7 +145,7 @@
 		
 		<div data-role="content" id="paginadenuncia">
 				
-			<p align="center" style="font-size:18pt;">
+			<p align="center" style="font-size:3vw;">
 			<img src="img/icono_denuncia.png" style="height:40px;vertical-align:middle;">
 			Línea de denuncia
 			</p>
@@ -164,49 +153,43 @@
 			<p><a href="#denunciaanonima" data-role="button" data-rel="popup" data-position-to="window">¿Qué es una denuncia anónima?</a></p>
 			<div data-role="popup" id="denunciaanonima" class="ui-content" style="max-width:400px">
 				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<font size="2">
-				<p align="justify">Cuando hablamos de <strong>denuncia anónima</strong>, queremos decir que toda la información que facilites sobre un contenido será recogida sin guardar <strong>ningún dato personal tuyo</strong>.</p>
-				<p align="justify">Es decir, en esta Línea se recoge la información que los usuarios envían, pero no quién la envía, ni desde dónde.</p>
-				<p align="justify">En PROTEGELES se comprueba si el contenido es ilegal o amenazante, y después se traslada a la unidad de Policía del país en el que se encuentre alojado el contenido, así como a la organización Internacional de Líneas de Denuncia (INHOPE).</p>
-				</font>
+				<p align="justify" style="font-size:1.5vw;">Cuando hablamos de <strong>denuncia anónima</strong>, queremos decir que toda la información que facilites sobre un contenido será recogida sin guardar <strong>ningún dato personal tuyo</strong>.</p>
+				<p align="justify" style="font-size:1.5vw;">Es decir, en esta Línea se recoge la información que los usuarios envían, pero no quién la envía, ni desde dónde.</p>
+				<p align="justify" style="font-size:1.5vw;">En PROTEGELES se comprueba si el contenido es ilegal o amenazante, y después se traslada a la unidad de Policía del país en el que se encuentre alojado el contenido, así como a la organización Internacional de Líneas de Denuncia (INHOPE).</p>
 			</div>
 			<p><a href="#contenidosilegales" data-role="button" data-rel="popup" data-position-to="window">¿Qué contenidos son ilegales o dañinos?</a></p>
 			<div data-role="popup" id="contenidosilegales" class="ui-content" style="max-width:400px">
 				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<font size="2">
-				<p align="justify">En esta Línea puedes informar sobre cualquier contenido ilegal, pero de forma prioritaria sobre <strong>imágenes de abusos sexuales contra menores de edad</strong> (pornografía infantil).</p>
-				<p align="justify">También puedes informar sobre contenidos dañinos, tanto si son ilegales en el país de origen como si no lo son. Así, puedes comunicar la presencia de:</p>
-				<ul>
+				<p align="justify" style="font-size:1.5vw;">En esta Línea puedes informar sobre cualquier contenido ilegal, pero de forma prioritaria sobre <strong>imágenes de abusos sexuales contra menores de edad</strong> (pornografía infantil).</p>
+				<p align="justify" style="font-size:1.5vw;">También puedes informar sobre contenidos dañinos, tanto si son ilegales en el país de origen como si no lo son. Así, puedes comunicar la presencia de:</p>
+				<ul style="font-size:1.5vw;">
 					<li>Páginas o perfiles que promueven <strong>la Anorexia y la Bulimia</strong>.</li>
 					<li>Páginas o perfiles con imágenes de <strong>acoso escolar</strong>, o donde un menor de edad sea maltratado.</li>
 					<li><strong>Sexting</strong> entre menores.</li>
 				</ul>
-				<p align="justify">Y cualquier otro contenido que te haga sentir mal.</p>
-				</font>
+				<p align="justify" style="font-size:1.5vw;">Y cualquier otro contenido que te haga sentir mal.</p>
 			</div>
 			
 			<p><a href="#formulariodenuncia" data-role="button" data-rel="popup" data-position-to="window">Quiero efectuar una denuncia</a></p>
 			<div data-role="popup" id="formulariodenuncia" class="ui-content" style="max-width:400px">
 				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<font size="2">
 				
 				<form>
-					<p align="center"><strong>Denuncia una URL:</strong>
-						<label for="url" class="ui-hidden-accessible">URL:</label>
+					<p align="center" style="font-size:1.5vw;"><strong>Denuncia una URL:</strong>
+						<label for="url" class="ui-hidden-accessible"  style="font-size:1.5vw;">URL:</label>
 						<input type="text" name="urldenuncia" id="urldenuncia" value="" placeholder="http://" data-theme="a">
 						<button type="submit" data-theme="a" data-icon="check" onclick="sendDenunciaURL()" data-inline="true">Enviar</button>
 					</p>
 				</form>
 
 				<form>
-					<p align="center"><strong>Denuncia un contenido sin URL:</strong>
-						<label for="url" class="ui-hidden-accessible">Contenido:</label>
+					<p align="center" style="font-size:1.5vw;"><strong>Denuncia un contenido sin URL:</strong>
+						<label for="url" class="ui-hidden-accessible" style="font-size:1.5vw;">Contenido:</label>
 						<textarea cols="40" rows="8" name="contenidoilegal" id="contenidoilegal" value="" placeholder="Describe el contenido" data-theme="a"></textarea>
 						<button type="submit" data-theme="a" data-icon="check" onclick="sendDenunciaNoURL()" data-inline="true">Enviar</button>
 					</p>
 				</form>
 
-				</font>
 			</div>
 			
 		</div><!-- /content -->
@@ -236,7 +219,7 @@
 
 		<div data-role="content" id="paginaayuda">
 					
-			<p align="center" style="font-size:18pt;">
+			<p align="center" style="font-size:3vw;">
 			<img src="img/icono_ayuda.png" style="height:40px;vertical-align:middle;">
 			Línea de ayuda
 			</p>
@@ -245,43 +228,36 @@
 			<p><a href="#quienayuda" data-role="button" data-rel="popup" data-position-to="window">¿Quién me va a ayudar?</a></p>
 			<div data-role="popup" id="quienayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<font size="2">
-				<p align="justify">La Línea de Ayuda PROTÉGETE está formada por profesionales que trabajan para ti.</p>
-				<p align="justify">Un equipo de <em>psicólogos</em>, <em>abogados</em>, <em>técnicos informáticos</em> y <em>expertos</em> en seguridad del Centro de Seguridad en Internet de <strong>protegeles.com</strong>, atiende las consultas o peticiones de ayuda que quieras hacerle.</p>
-				<p align="justify"><strong>Toda la ayuda es profesional, GRATUITA y anónima.</strong></p>
-				</font>
+				<p align="justify" style="font-size:1.5vw;">La Línea de Ayuda PROTÉGETE está formada por profesionales que trabajan para ti.</p>
+				<p align="justify" style="font-size:1.5vw;">Un equipo de <em>psicólogos</em>, <em>abogados</em>, <em>técnicos informáticos</em> y <em>expertos</em> en seguridad del Centro de Seguridad en Internet de <strong>protegeles.com</strong>, atiende las consultas o peticiones de ayuda que quieras hacerle.</p>
+				<p align="justify" style="font-size:1.5vw;"><strong>Toda la ayuda es profesional, GRATUITA y anónima.</strong></p>
 			</div>
 
 			<p><a href="#situacionesayuda" data-role="button" data-rel="popup" data-position-to="window">¿Ante qué situaciones puedo pedir ayuda?</a></p>
 			<div data-role="popup" id="situacionesayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<font size="2">
-				<p align="justify">Los profesionales de <strong>protegeles.com</strong> te ayudarán si:</p>
-				<ul>
+				<p align="justify" style="font-size:1.5vw;">Los profesionales de <strong>protegeles.com</strong> te ayudarán si:</p>
+				<ul style="font-size:1.5vw;">
 					<li>Sufres acoso escolar en internet (ciberbullying).</li>
 					<li>Alguien te acosa sexualmente en Internet o te pide fotos sin ropa.</li>
 					<li>Alguien ha usurpado tu identidad, haciéndose pasar por ti en internet.</li>
 					<li>Alguien está difundiendo fotos tuyas, o tus datos personales.</li>
 					<li>Otras situaciones que te hagan sentir mal.</li>
 				</ul>
-				</font>
-				</li>
 			</div>
 
 			<p><a href="#formularioayuda" data-role="button" data-rel="popup" data-position-to="window">Quiero pedir ayuda</a></p>
 			<div data-role="popup" id="formularioayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-				<font size="2">
 				<form id="miFormularioAyuda">
-					<p><strong>Describe la situación o el problema. No olvides incluir una dirección de correo electrónico.</strong>
-					<label for="url" class="ui-hidden-accessible">Contenido:</label>
+					<p style="font-size:1.5vw;"><strong>Describe la situación o el problema. No olvides incluir una dirección de correo electrónico.</strong>
+					<label for="url" class="ui-hidden-accessible" style="font-size:1.5vw;">Contenido:</label>
 					<textarea cols="40" rows="8" name="contenidoayuda" id="contenidoayuda" placeholder="Esta es la situación" data-theme="a"></textarea>
 					<div align="center">
 					<button type="submit" data-theme="a" data-icon="check" onclick="sendAyuda()" data-inline="true" align="center">Enviar</button>
 					</div>
 					</p>
 				</form>				
-				</font>
 				</li>
 			</div>
 		</div><!-- /content -->
@@ -311,12 +287,12 @@
 
 		<div data-role="content">
 		
-			<p align="center" style="font-size:18pt;">
+			<p align="center" style="font-size:3vw;">
 			<img src="img/icono_test.png" style="height:40px;vertical-align:middle;">
 			<span style="width: 5pt;"></span>Test
 			</p>
 
-			<p align="center" style="font-size:15pt;">¡Mide tus conocimientos!</p>
+			<p align="center" style="font-size:2vw;">¡Mide tus conocimientos!</p>
 
 			<div style="height: 10px;"></div>
 
@@ -352,27 +328,23 @@
 
 		<div data-role="content">
 		
-			<p align="left" style="font-size: 13px;">¿Qué es el ciberbullying?</p>
+			<p align="left" style="font-size: 2vw;">¿Qué es el ciberbullying?</p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta01" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Cuando un compañero te envía un mensaje insultándote a través de internet.</a>
 				<div data-role="popup" id="incorrecta01" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-					<font size="2">
-					<p align="justify">Cuando un compañero te envía un mensaje insultándote a través de internet.</p>
-					<p align="center"><strong>INCORRECTO</strong></p>
-					<p align="justify">Tiene que tratarse de un acoso regular. Si sólo se ha producido una vez no podemos hablar de ciberbullying.</p>
-					</font>
+					<p align="justify" style="font-size: 1.5vw;">Cuando un compañero te envía un mensaje insultándote a través de internet.</p>
+					<p align="center" style="font-size: 1.5vw;"><strong>INCORRECTO</strong></p>
+					<p align="justify" style="font-size: 1.5vw;">Tiene que tratarse de un acoso regular. Si sólo se ha producido una vez no podemos hablar de ciberbullying.</p>
 				</div>
 
 				<a href="#correcta01" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Cuando te molestan, te insultan o te amenazan con regularidad en internet.</a>
 				<div data-role="popup" id="correcta01" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-					<font size="2">
-					<p align="justify">Cuando te molestan, te insultan o te amenazan con regularidad en internet.</p>
-					<p align="center"><strong>¡CORRECTO!</strong></p>
-					<p align="justify">El ciberbullying o acoso entre iguales a través de internet es una agresión psicológica, mantenida en el tiempo, realizada a través de las nuevas tecnologías.</p>
-					</font>
+					<p align="justify" style="font-size: 1.5vw;">Cuando te molestan, te insultan o te amenazan con regularidad en internet.</p>
+					<p align="center" style="font-size: 1.5vw;"><strong>¡CORRECTO!</strong></p>
+					<p align="justify" style="font-size: 1.5vw;">El ciberbullying o acoso entre iguales a través de internet es una agresión psicológica, mantenida en el tiempo, realizada a través de las nuevas tecnologías.</p>
 				</div>
 			<!-- </div> -->
 			
@@ -902,7 +874,7 @@
 
 		<div data-role="content">
 		
-			<p align="center" style="font-size:18pt;">
+			<p align="center" style="font-size:3vw;">
 			<img src="img/icono_test.png" style="height:40px;vertical-align:middle;">
 			Test
 			</p>
