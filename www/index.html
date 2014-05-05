@@ -81,14 +81,19 @@
 	
 	<style type="text/css">
 	
-	h1 { font-size: 35px; }
+	h1{
+		font-family: 'Open Sans'
+		width:400px;
+		font-weight: normal;
+		color: #ffffff;
+		padding:5px 0;
+		<--! margin:20px 0 40px 0; -->
+		<--! background:url(img/h1.png); -->
+		text-align:center;
+	}
 	
-	p { font-size: 25px; }
-	
-	li { font-size: 25px; }
-		
 	span.ui-btn-inner {
-		font-size: 25px;
+		font-size: 13px;
 		white-space: normal;
 	}
 	
@@ -105,15 +110,11 @@
 	
 	<!-- Portada -->
 		
-<<<<<<< HEAD
-	<div data-role=page id="portada" data-theme="b" style="background-image:url(img/portada.grande.jpg);background-repeat:no-repeat;background-position:top center;background-size:cover;">
-=======
 	<div data-role=page id="portada" data-theme="b" style="background-image:url(img/portada.grande.png);background-repeat:no-repeat;background-position:top center;">
->>>>>>> parent of 36027a4... Resized backgrounds
 	
 		<div data-role="content">
 		
-			<div style="height: 700px;"></div>
+			<div style="height: 350px;"></div>
 			<p align="center"><a href="#inicio" data-role="button" data-inline="true" data-transition="none">Inicio</a></p>
 			
 		</div><!-- /content -->
@@ -125,26 +126,26 @@
 	
 	<div data-role=page id="inicio" data-theme="b" style="background-image:url(img/fondo_inicio.jpg);background-repeat:no-repeat;background-position:center;">
 	
-		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+		<div data-role="header" style="overflow:hidden;height:55px;">
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<!-- <div style="height: 55px;"></div> -->
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 	
 		<div data-role="content" id="paginainicio">
 		
-			<h1 align="center">Elige una opción</h1>
+			<p align="center" style="font-size:18pt;">Elige una opción</p>
 			
 			<div align="left">
-				<img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png">
+				<img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png">
 				<span><a href="#denuncia" data-role="button" data-inline="true" data-transition="none" data-theme="b">Denuncia</a></span>
 			</div>
 			<div align="left">
-				<img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png">
+				<img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png">
 				<span><a href="#lineaayuda" data-role="button" data-inline="true" data-transition="none" data-theme="c">Linea de ayuda</a></span>
 			</div>
 			<div align="left">
-				<img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png">
+				<img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png">
 				<span><a href="#test" data-role="button" data-inline="true" data-transition="none" data-theme="d">Test</a></span>
 			</div>
 
@@ -154,9 +155,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -169,28 +170,31 @@
 	<div data-role=page id="denuncia" data-theme="b" style="background-image:url(img/fondo_denuncia.jpg);background-repeat:no-repeat;background-position:center;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
-
+		
 		<div data-role="content" id="paginadenuncia">
 				
-			<h1 align="center">
-			<img src="img/icono_denuncia.png" style="height:50px;vertical-align:middle;">
+			<p align="center" style="font-size:18pt;">
+			<img src="img/icono_denuncia.png" style="height:40px;vertical-align:middle;">
 			Línea de denuncia
-			</h1>
+			</p>
 		
 			<p><a href="#denunciaanonima" data-role="button" data-rel="popup" data-position-to="window">¿Qué es una denuncia anónima?</a></p>
-			<div data-role="popup" id="denunciaanonima" class="ui-content" style="max-width:500px">
+			<div data-role="popup" id="denunciaanonima" class="ui-content" style="max-width:400px">
 				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<font size="2">
 				<p align="justify">Cuando hablamos de <strong>denuncia anónima</strong>, queremos decir que toda la información que facilites sobre un contenido será recogida sin guardar <strong>ningún dato personal tuyo</strong>.</p>
 				<p align="justify">Es decir, en esta Línea se recoge la información que los usuarios envían, pero no quién la envía, ni desde dónde.</p>
 				<p align="justify">En PROTEGELES se comprueba si el contenido es ilegal o amenazante, y después se traslada a la unidad de Policía del país en el que se encuentre alojado el contenido, así como a la organización Internacional de Líneas de Denuncia (INHOPE).</p>
+				</font>
 			</div>
 			<p><a href="#contenidosilegales" data-role="button" data-rel="popup" data-position-to="window">¿Qué contenidos son ilegales o dañinos?</a></p>
-			<div data-role="popup" id="contenidosilegales" class="ui-content" style="max-width:500px">
+			<div data-role="popup" id="contenidosilegales" class="ui-content" style="max-width:400px">
 				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<font size="2">
 				<p align="justify">En esta Línea puedes informar sobre cualquier contenido ilegal, pero de forma prioritaria sobre <strong>imágenes de abusos sexuales contra menores de edad</strong> (pornografía infantil).</p>
 				<p align="justify">También puedes informar sobre contenidos dañinos, tanto si son ilegales en el país de origen como si no lo son. Así, puedes comunicar la presencia de:</p>
 				<ul>
@@ -199,15 +203,17 @@
 					<li><strong>Sexting</strong> entre menores.</li>
 				</ul>
 				<p align="justify">Y cualquier otro contenido que te haga sentir mal.</p>
+				</font>
 			</div>
 			
 			<p><a href="#formulariodenuncia" data-role="button" data-rel="popup" data-position-to="window">Quiero efectuar una denuncia</a></p>
-			<div data-role="popup" id="formulariodenuncia" class="ui-content" style="max-width:500px">
+			<div data-role="popup" id="formulariodenuncia" class="ui-content" style="max-width:400px">
 				<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<font size="2">
 				
 				<form>
 					<p align="center"><strong>Denuncia una URL:</strong>
-						<label for="url" class="ui-hidden-accessible" >URL:</label>
+						<label for="url" class="ui-hidden-accessible">URL:</label>
 						<input type="text" name="urldenuncia" id="urldenuncia" value="" placeholder="http://" data-theme="a">
 						<button type="submit" data-theme="a" data-icon="check" onclick="sendDenunciaURL()" data-inline="true">Enviar</button>
 					</p>
@@ -221,6 +227,7 @@
 					</p>
 				</form>
 
+				</font>
 			</div>
 			
 		</div><!-- /content -->
@@ -229,9 +236,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -243,29 +250,33 @@
 	<div data-role=page id="lineaayuda" data-theme="c" style="background-image:url(img/fondo_ayuda.jpg);background-repeat:no-repeat;background-position:center;">
 
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content" id="paginaayuda">
 					
-			<h1 align="center">
-			<img src="img/icono_ayuda.png" style="height:50px;vertical-align:middle;">
+			<p align="center" style="font-size:18pt;">
+			<img src="img/icono_ayuda.png" style="height:40px;vertical-align:middle;">
 			Línea de ayuda
-			</h1>
+			</p>
 
+			
 			<p><a href="#quienayuda" data-role="button" data-rel="popup" data-position-to="window">¿Quién me va a ayudar?</a></p>
-			<div data-role="popup" id="quienayuda" class="ui-content" style="max-width:500px">
+			<div data-role="popup" id="quienayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<font size="2">
 				<p align="justify">La Línea de Ayuda PROTÉGETE está formada por profesionales que trabajan para ti.</p>
 				<p align="justify">Un equipo de <em>psicólogos</em>, <em>abogados</em>, <em>técnicos informáticos</em> y <em>expertos</em> en seguridad del Centro de Seguridad en Internet de <strong>protegeles.com</strong>, atiende las consultas o peticiones de ayuda que quieras hacerle.</p>
 				<p align="justify"><strong>Toda la ayuda es profesional, GRATUITA y anónima.</strong></p>
+				</font>
 			</div>
 
 			<p><a href="#situacionesayuda" data-role="button" data-rel="popup" data-position-to="window">¿Ante qué situaciones puedo pedir ayuda?</a></p>
-			<div data-role="popup" id="situacionesayuda" class="ui-content" style="max-width:500px">
+			<div data-role="popup" id="situacionesayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<font size="2">
 				<p align="justify">Los profesionales de <strong>protegeles.com</strong> te ayudarán si:</p>
 				<ul>
 					<li>Sufres acoso escolar en internet (ciberbullying).</li>
@@ -274,11 +285,14 @@
 					<li>Alguien está difundiendo fotos tuyas, o tus datos personales.</li>
 					<li>Otras situaciones que te hagan sentir mal.</li>
 				</ul>
+				</font>
+				</li>
 			</div>
 
 			<p><a href="#formularioayuda" data-role="button" data-rel="popup" data-position-to="window">Quiero pedir ayuda</a></p>
-			<div data-role="popup" id="formularioayuda" class="ui-content" style="max-width:500px">
+			<div data-role="popup" id="formularioayuda" class="ui-content" style="max-width:400px" data-dismissible="false">
 				<a href="#" data-rel="back" data-role="button" data-theme="c" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<font size="2">
 				<form id="miFormularioAyuda">
 					<p><strong>Describe la situación o el problema. No olvides incluir una dirección de correo electrónico.</strong>
 					<label for="url" class="ui-hidden-accessible">Contenido:</label>
@@ -288,6 +302,7 @@
 					</div>
 					</p>
 				</form>				
+				</font>
 				</li>
 			</div>
 		</div><!-- /content -->
@@ -296,9 +311,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -310,21 +325,19 @@
 	<div data-role=page id="test" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-		
-			<h1 align="center">
+			<p align="center" style="font-size:18pt;">
 			<img src="img/icono_test.png" style="height:40px;vertical-align:middle;">
-			<!-- <span style="width: 5pt;"></span> -->
-			Test
-			</h1>
+			<span style="width: 5pt;"></span>Test
+			</p>
 
-			<p align="center">¡Mide tus conocimientos!</p>
+			<p align="center" style="font-size:15pt;">¡Mide tus conocimientos!</p>
 
 			<div style="height: 10px;"></div>
 
@@ -339,9 +352,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -353,30 +366,34 @@
 	<div data-role=page id="test01" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-			<p align="left">¿Qué es el ciberbullying?</p>
+			<p align="left" style="font-size: 13px;">¿Qué es el ciberbullying?</p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta01" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Cuando un compañero te envía un mensaje insultándote a través de internet.</a>
-				<div data-role="popup" id="incorrecta01" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="incorrecta01" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-					<p align="justify" style="font-size: 1.5vw;">Cuando un compañero te envía un mensaje insultándote a través de internet.</p>
-					<p align="center" style="font-size: 1.5vw;"><strong>INCORRECTO</strong></p>
-					<p align="justify" style="font-size: 1.5vw;">Tiene que tratarse de un acoso regular. Si sólo se ha producido una vez no podemos hablar de ciberbullying.</p>
+					<font size="2">
+					<p align="justify">Cuando un compañero te envía un mensaje insultándote a través de internet.</p>
+					<p align="center"><strong>INCORRECTO</strong></p>
+					<p align="justify">Tiene que tratarse de un acoso regular. Si sólo se ha producido una vez no podemos hablar de ciberbullying.</p>
+					</font>
 				</div>
 
 				<a href="#correcta01" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Cuando te molestan, te insultan o te amenazan con regularidad en internet.</a>
-				<div data-role="popup" id="correcta01" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="correcta01" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-					<p align="justify" style="font-size: 1.5vw;">Cuando te molestan, te insultan o te amenazan con regularidad en internet.</p>
-					<p align="center" style="font-size: 1.5vw;"><strong>¡CORRECTO!</strong></p>
-					<p align="justify" style="font-size: 1.5vw;">El ciberbullying o acoso entre iguales a través de internet es una agresión psicológica, mantenida en el tiempo, realizada a través de las nuevas tecnologías.</p>
+					<font size="2">
+					<p align="justify">Cuando te molestan, te insultan o te amenazan con regularidad en internet.</p>
+					<p align="center"><strong>¡CORRECTO!</strong></p>
+					<p align="justify">El ciberbullying o acoso entre iguales a través de internet es una agresión psicológica, mantenida en el tiempo, realizada a través de las nuevas tecnologías.</p>
+					</font>
 				</div>
 			<!-- </div> -->
 			
@@ -390,9 +407,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -404,31 +421,34 @@
 	<div data-role=page id="test02" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-		
-			<p align="left">Si te amenaza alguien de menos de 14 años no se puede hacer nada.</p>
+			<p align="left" style="font-size: 13px;">Si te amenaza alguien de menos de 14 años no se puede hacer nada.</p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta02" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Cierto: Los menores de 14 años no tienen responsabilidad penal.</a>
-				<div data-role="popup" id="incorrecta02" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="incorrecta02" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Cierto: los menores de 14 años no tienen responsabilidad penal, así que no hay nada que hacer.</p>
 					<p align="center"><strong>¡De eso nada! INCORRECTO</strong></p>
 					<p align="justify">Las personas con menos de 14 años no tienen responsabilidad penal directa, pero sus padres son responsables de los daños o perjuicios que puedan ocasionar.</p>
+					</font>
 				</div>
 
 				<a href="#correcta02" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Falso: Podemos y debemos contarlo. Además, siempre hay alguien responsable.</a>
-				<div data-role="popup" id="correcta02" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="correcta02" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Falso: Podemos y debemos contarlo de la misma manera. Además, siempre hay alguien responsable, y en el caso de los menores de 14 años son sus padres.</p>
 					<p align="center"><strong>¡EXACTO!</strong></p>
 					<p align="justify">Hay que actuar y pedir ayuda siempre. Además, los padres de los menores de 14 años son responsables de los perjuicios que puedan ocasionar.</p>
+					</font>
 				</div>
 			<!-- </div> -->
 			
@@ -442,9 +462,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -456,31 +476,34 @@
 	<div data-role=page id="test03" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-		
-			<p align="left">Si el acoso ocurre en internet, el colegio o instituto no puede intervenir.</p>
+			<p align="left" style="font-size: 13px;">Si el acoso ocurre en internet, el colegio o instituto no puede intervenir.</p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta03" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">En efecto. Sólo pueden intervenir en situaciones dentro del centro.</a>
-				<div data-role="popup" id="incorrecta03" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="incorrecta03" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">En efecto. El colegio o instituto sólo puede intervenir en las situaciones que se produzcan dentro del centro educativo.</p>
 					<p align="center"><strong>¡PARA NADA!</strong></p>
 					<p align="justify">Los centros escolares tienen la obligación de intervenir en los casos de acoso escolar, aunque se produzcan fuera del centro, si víctima y agresor/es son del mismo colegio o instituto. Pero para que puedan hacerlo hay que informarles.</p>
+					</font>
 				</div>
 
 				<a href="#correcta03" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">No es así. Tienen la obligación de intervenir si víctima y agresor/es son del mismo centro.</a>
-				<div data-role="popup" id="correcta03" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="correcta03" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">No es así. Los centros escolares tienen la obligación de intervenir en los casos de acoso escolar, aunque se produzcan fuera del centro, si víctima y agresor/es son del mismo colegio o instituto.</p>
 					<p align="center"><strong>¡CORRECTO!</strong></p>
 					<p align="justify">Tienen la obligación de intervenir en cuanto se les comunica el caso, y si víctima y agresor/es son del mismo colegio o instituto.</p>
+					</font>
 				</div>
 			<!-- </div> -->
 
@@ -494,9 +517,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -508,31 +531,34 @@
 	<div data-role=page id="test04" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-		
-			<p align="left">Si alguien tiene imágenes tuyas “comprometidas” o íntimas, lo mejor es procurar que no se enfade y hacerle caso.</p>
+			<p align="left" style="font-size: 13px;">Si alguien tiene imágenes tuyas “comprometidas” o íntimas, lo mejor es procurar que no se enfade y hacerle caso.</p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta04" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">En efecto, ya que puede distribuirlas o publicarlas en algún sitio.</a>
-				<div data-role="popup" id="incorrecta04" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="incorrecta04" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">En efecto. Si se enfada puede distribuirlas o publicarlas en algún sitio.</p>
 					<p align="center"><strong>¡NI SE TE OCURRA!</strong></p>
 					<p align="justify">Las personas que chantajean siempre quieren más. Nunca es suficiente. Cuantas más imágenes consiguen más herramientas tienen para seguir chantajeando y llegar más lejos. Las consecuencias de hacerles caso pueden llegar a ser muy graves.</p>
+					</font>
 				</div>
 
 				<a href="#correcta04" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Nunca se debe aceptar un chantaje. Lo mejor es contarlo y pedir ayuda.</a>
-				<div data-role="popup" id="correcta04" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="correcta04" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Nunca se debe aceptar un chantaje. Lo mejor es contarlo a nuestros padres, pedir ayuda a la Línea de Ayuda sobre acoso sexual en internet, y si es necesario denunciar la situación a la Policía o Guardia Civil.</p>
 					<p align="center"><strong>¡CORRECTO!</strong></p>
 					<p align="justify">Si lo cuentas y pides ayuda desde el primer momento, será mucho más fácil solucionarlo y las consecuencias no serán tan graves.</p>
+					</font>
 				</div>
 			<!-- </div> -->
 
@@ -546,9 +572,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -560,31 +586,34 @@
 	<div data-role=page id="test05" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-		
-			<p align="left">Si no usas la webcam más que de vez en cuando no hay necesidad de preocuparse de nada.</p>
+			<p align="left" style="font-size: 13px;">Si no usas la webcam más que de vez en cuando no hay necesidad de preocuparse de nada.</p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta05" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Claro, si la usas bien y sólo de vez en cuando, no hay ningún problema.</a>
-				<div data-role="popup" id="incorrecta05" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="incorrecta05" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Claro, si la usas sólo de vez en cuando y la usas bien no hay ningún problema.</p>
 					<p align="center"><strong>¡PUES LO LLEVAS CLARO!</strong></p>
 					<p align="justify">La webcam puede activarse a distancia, desde otro ordenador situado en cualquier parte del mundo. Si abres correos de desconocidos o realizas descargas con programas p2p, por ejemplo, puedes descarte virus troyanos que pueden permitir a otras personas verte utilizando tu webcam.</p>
+					</font>
 				</div>
 
 				<a href="#correcta05" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Aunque no la uses para nada malo, es necesario tenerla tapada. Si no la usas, mejor bloquearla.</a>
-				<div data-role="popup" id="correcta05" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="correcta05" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Aunque no la utilices para nada incorrecto y hagas un buen uso, es necesario tenerla tapada. Si no la utilizas nunca es mejor bloquearla.</p>
 					<p align="center"><strong>¡CORRECTO!</strong></p>
 					<p align="justify">No debes utilizarla para tratar con desconocidos. Recuerda que además la persona que está al otro lado puede gravar la conversación y las imágenes. Ten siempre la webcam tapada para asegurarte de que nadie la está activando por remoto.</p>
+					</font>
 				</div>
 			<!-- </div> -->
 
@@ -598,9 +627,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -612,31 +641,34 @@
 	<div data-role=page id="test06" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-		
-			<p align="left">No hace falta leerse las condiciones de uso de las Apps que instalamos en nuestros móviles o tablets. Ya han sido revisadas por alguien.</p>
+			<p align="left" style="font-size: 13px;">No hace falta leerse las condiciones de uso de las Apps que instalamos en nuestros móviles o tablets. Ya han sido revisadas por alguien.</p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#incorrecta06" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Si no fueran seguras no estarían colgadas.</a>
-				<div data-role="popup" id="incorrecta06" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="incorrecta06" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Si no fueran seguras no estarían colgadas. No pasa nada por instalárselas.</p>
 					<p align="center"><strong>NO TE EQUIVOQUES...</strong></p>
 					<p align="justify">Las Apps no son inseguras, pero debes saber a qué contenidos de tú terminal van a acceder, qué información tuya van a recabar y qué van a hacer con ella. Hay Apps que copian tus contactos o realizan fotos con tu cámara, por ejemplo. Tu PRIVACIDAD forma parte de tu seguridad.</p>
+					</font>
 				</div>
 
 				<a href="#correcta06" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Hay que leerse las condiciones que estás aceptando.</a>
-				<div data-role="popup" id="correcta06" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="correcta06" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Hay que leerse las condiciones que estás aceptando al instalártelas. Lo importante no es sólo la seguridad, sino también la privacidad.</p>
 					<p align="center"><strong>¡CORRECTO!</strong></p>
 					<p align="justify">Hay Apps que especifican en sus condiciones que van a acceder a tu tarjeta SIM, a tu listado de contactos, a conversaciones o incluso a tu galería de fotos... Recuerda que tu PRIVACIDAD forma parte de tu seguridad.</p>
+					</font>
 				</div>
 			<!-- </div> -->
 
@@ -650,9 +682,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -664,30 +696,34 @@
 	<div data-role=page id="test07" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
-				
-			<p align="left">Si recibes una foto comprometida de algún conocid@ o compañer@... ¿Cómo actuarías?</p>
+		
+			<p align="left" style="font-size: 13px;">Si recibes una foto comprometida de algún conocid@ o compañer@... ¿Cómo actuarías?</p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#correcta07" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">No reenviando la foto, pues sería tan responsable como el que la hizo e inició la cadena.</a>
-				<div data-role="popup" id="correcta07" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="correcta07" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">No reenviando la foto, ya que pasándosela a más contactos soy tan responsable como el que hizo la foto e inició la cadena.</p>
 					<p align="center"><strong>¡CORRECTO!</strong></p>
 					<p align="justify">La responsabilidad es la misma hayas enviado la foto antes o después. Por otro lado debes intentar ponerte siempre en el lugar de la persona cuya imagen alguien quiere distribuir sin su permiso. ¿Te imaginas estar en su lugar?</p>
+					</font>
 				</div>
 
 				<a href="#incorrecta07" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Reenviando la foto a más contactos. Yo no he hecho la foto y no tengo ninguna responsabilidad.</a>
-				<div data-role="popup" id="incorrecta07" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="incorrecta07" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Reenviando la foto a más contactos. Además, yo no he hecho la foto y no tengo ninguna responsabilidad al respecto.</p>
 					<p align="center"><strong>¡NO TE EQUIVOQUES!</strong></p>
 					<p align="justify">Si envías la fotografía no importa quien la haya enviado antes o después. Cada uno es responsable de sus propios actos y termina sufriendo las consecuencias de haber actuado bien o mal.</p>
+					</font>
 				</div>
 			<!-- </div> -->
 
@@ -701,9 +737,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -715,31 +751,34 @@
 	<div data-role=page id="test08" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-		
-			<p align="left">Una vez que he configurado la privacidad de mi perfil en mi red social...</p>
+			<p align="left" style="font-size: 13px;">Una vez que he configurado la privacidad de mi perfil en mi red social...</p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#correcta08" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">La reviso periódicamente por si actualizan las opciones de seguridad o herramientas.</a>
-				<div data-role="popup" id="correcta08" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="correcta08" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">La reviso periódicamente por si actualizan las opciones de seguridad o herramientas. Así me aseguro de que todo esté configurado como debiera.</p>
 					<p align="center"><strong>¡BIEN HECHO!</strong></p>
 					<p align="justify">Cuando en una red social actualizan las opciones de seguridad, pueden introducir cambios o modificaciones que en ocasiones desconfiguran la privacidad de los perfiles.</p>
+					</font>
 				</div>
 
 				<a href="#incorrecta08" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Me quedo tranquil@ y no la reviso más, para eso la he configurado correctamente desde el principio.</a>
-				<div data-role="popup" id="incorrecta08" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="incorrecta08" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Me quedo tranquil@ y no la reviso más, para eso la he configurado correctamente desde el principio.</p>
 					<p align="center"><strong>¡NO TE CONFÍES!</strong></p>
 					<p align="justify">Aunque hayas configurado correctamente tu privacidad, los cambios y actualizaciones que realizan algunas redes sociales pueden desconfigurarla. Revisala con regularidad y asegúrate de que todo esta bien.</p>
+					</font>
 				</div>
 			<!-- </div> -->
 
@@ -753,9 +792,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -767,31 +806,34 @@
 	<div data-role=page id="test09" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-		
-			<p align="left">Si veo la imagen de una persona a través de la webcam, ¿puedo estar seguro de que es la persona que dice ser? </p>
+			<p align="left" style="font-size: 13px;">Si veo la imagen de una persona a través de la webcam, ¿puedo estar seguro de que es la persona que dice ser? </p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#correcta09" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">No puedo estar tan seguro, ya que es posible que la imagen sea una grabación de otra persona.</a>
-				<div data-role="popup" id="correcta09" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="correcta09" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">No puedo estar tan seguro de que sea quien dice ser, ya que es posible que la imagen que veo a través de la webcam sea una grabación hecha antes a otra persona.</p>
 					<p align="center"><strong>EN EFECTO...</strong></p>
 					<p align="justify">Puedes ser una grabación que están proyectándote. Una buena idea es pedirle a la persona que está al otro lado que haga un gesto determinado. Si no lo hace, ya sabes...</p>
+					</font>
 				</div>
 
 				<a href="#incorrecta09" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Sí, claro. Estoy viendo la imagen moverse y sus mensajes me están llegando correctamente.</a>
-				<div data-role="popup" id="incorrecta09" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="incorrecta09" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Sí, claro. Estoy viendo la imagen moverse y sus mensajes me están llegando correctamente.</p>
 					<p align="center"><strong>¡PUES TE LA PUEDEN DAR!</strong></p>
 					<p align="justify">Hay programas que permiten grabar a una persona a través de la webcam, y después proyectar esa grabación al conectarse con otra persona. Tu ves una imagen grabada, y realmente no sabes cómo es la persona que está escribiéndote al otro lado...</p>
+					</font>
 				</div>
 			<!-- </div> -->
 
@@ -805,9 +847,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -819,31 +861,34 @@
 	<div data-role=page id="test10" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-		
-			<p align="left">Cuando subo fotografías a Internet, puedo controlarlas, saber con facilidad quien las ve, y eliminarlas cuando quiera.</p>
+			<p align="left" style="font-size: 13px;">Cuando subo fotografías a Internet, puedo controlarlas, saber con facilidad quien las ve, y eliminarlas cuando quiera.</p>
 			
 			<!-- <div data-role="controlgroup" data-corners="false"> -->
 				<a href="#correcta10" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">No puedo controlarlas. No sé qué pueden hacer con mis fotos los que las ven, ni si las copian o no.</a>
-				<div data-role="popup" id="correcta10" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="correcta10" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">No puedo controlarlas. No sé qué pueden hacer con mis fotos los amigos o conocidos que las ven, ni si las copian o no.</p>
 					<p align="center"><strong>EN EFECTO...</strong></p>
 					<p align="justify">Al subir una foto a internet hemos perdido el control sobre ella. Antes de hacerlo debemos plantearnos si estamos dispuestos a que esa imagen llegue a ser pública. Si no estás dispuest@, entonces mejor no la subas.</p>
+					</font>
 				</div>
 
 				<a href="#incorrecta10" data-rel="popup" data-position-to="window" data-role="button" data-corners="false">Puedo controlarlas gracias a las opciones de las redes sociales, decidir quién las ve y eliminarlas.</a>
-				<div data-role="popup" id="incorrecta10" class="ui-content" style="max-width:500px">
+				<div data-role="popup" id="incorrecta10" class="ui-content" style="max-width:400px">
 					<a href="#" data-rel="back" data-role="button" data-theme="d" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+					<font size="2">
 					<p align="justify">Sí puedo controlarlas. Gracias a las opciones de las redes sociales puedo decidir quién ve mis fotos y eliminarlas cuando quiera.</p>
 					<p align="center"><strong>¡OJALÁ!</strong></p>
 					<p align="justify">Puedes restringir el acceso a tus fotos, pero no puedes impedir que las personas que has autorizado las copien. Si alguna de estas personas quiere, puede enviársela a otras personas o colgarla a su vez en otro sitio.</p>
+					</font>
 				</div>
 			<!-- </div> -->
 
@@ -857,9 +902,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
@@ -871,20 +916,19 @@
 	<div data-role=page id="testfin" data-theme="d" style="background-image:url(img/fondo_test.jpg);background-repeat:no-repeat;">
 	
 		<div data-role="header" style="overflow:hidden;">
-			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align:middle;height:60px;"></a>
-			<div style="height: 80px;"></div>
-			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align:middle;height:60px;"></a>
+			<a href="#inicio" data-transition="none"><img src="img/menu.png" style="vertical-align: middle;"></a>
+			<div style="height: 60px;"></div>
+			<a href="#portada" data-transition="none"><img src="img/info.png" style="vertical-align: middle;"></a>
 		</div><!-- /header -->
 
 		<div data-role="content">
 		
-		
-			<p align="center" style="font-size:3vw;">
+			<p align="center" style="font-size:18pt;">
 			<img src="img/icono_test.png" style="height:40px;vertical-align:middle;">
 			Test
 			</p>
 
-			<p align="center">¿Quieres ayudarnos enviando tus respuestas de manera anónima?</p>
+			<p align="center" style="font-size:12pt;">¿Quieres ayudarnos enviando tus respuestas de manera anónima?</p>
 
 			<div style="height: 10px;"></div>
 
@@ -900,9 +944,9 @@
 		<div data-role=footer data-position=fixed id="nav">
 			<div data-role=navbar>
 			 <ul>
-				<li><a href=#denuncia data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
-				<li><a href=#lineaayuda data-transition="none"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
-				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:100px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
+				<li><a href=#denuncia data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_1.png"></a></li>
+				<li><a href=#lineaayuda data-transition="none"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_2.png"></a></li>
+				<li><a href=#test data-transition="none" class="ui-btn-active ui-state-persist"><img style="height:60px;vertical-align:middle;" src="img/menu_abajo_3.png"></a></li>
 			 </ul>
 			</div>
 		</div><!-- /footer -->
